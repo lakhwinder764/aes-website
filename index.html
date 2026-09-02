@@ -15,6 +15,29 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (() => {
+        const hideNetlifyBadge = () => {
+          const elements = [...document.querySelectorAll('a,div,span,button,svg,p,figure')]
+            .filter((el) => {
+              const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+              const aria = el.getAttribute('aria-label') || '';
+              const title = el.getAttribute('title') || '';
+              return /powered by netlify|netlify/i.test(text) || /netlify/i.test(aria) || /netlify/i.test(title);
+            });
+
+          elements.forEach((el) => {
+            el.style.display = 'none';
+            el.style.visibility = 'hidden';
+            el.setAttribute('hidden', 'true');
+          });
+        };
+
+        hideNetlifyBadge();
+        const observer = new MutationObserver(hideNetlifyBadge);
+        observer.observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
