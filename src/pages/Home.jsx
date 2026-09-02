@@ -38,7 +38,8 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: `url(${current.src})` }} role="img" aria-label="Visa consultation background" />
+        <img className="hero-bg-img" src={current.src} alt="" />
+        <div className="hero-bg" style={{ backgroundImage: `url(${current.src})` }} />
         <div className="overlay" />
         <div className="float-orbs" aria-hidden="true">
           <div className="orb a" />

@@ -20,6 +20,9 @@ function ScrollTop() {
 }
 
 export default function App() {
+  useEffect(() => {
+    document.title = 'Anand Education Services'
+  }, [])
   return (
     <>
       <ScrollTop />

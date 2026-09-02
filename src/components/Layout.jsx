@@ -4,6 +4,7 @@ import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
 import CursorGlow from './CursorGlow.jsx'
 import DepthField from './DepthField.jsx'
+import ScrollProgress from './ScrollProgress.jsx'
 import { Phone, MessageCircle } from 'lucide-react'
 import { site } from '../data.js'
 
@@ -29,6 +30,7 @@ export default function Layout() {
         </motion.main>
       </AnimatePresence>
       <Footer />
+      <ScrollProgress />
       <div className="float-actions">
         <a className="call" href={site.mobileHref} aria-label="Call AES">
           <Phone size={20} />
