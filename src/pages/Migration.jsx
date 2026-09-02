@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import TiltCard from '../components/TiltCard.jsx'
+import ProcessFunnel from '../components/ProcessFunnel.jsx'
 import { migration } from '../data.js'
 
 export default function Migration() {
@@ -43,6 +44,7 @@ export default function Migration() {
             {migration.highlights.map((item, i) => (
               <Reveal key={item.title} delay={i * 0.06}>
                 <article className="highlight">
+                  <img className="highlight-photo" src={item.image} alt={item.title} />
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </article>
@@ -57,17 +59,9 @@ export default function Migration() {
           <Reveal>
             <h2 className="section-title">Sample Process</h2>
           </Reveal>
-          <div className="process" style={{ marginTop: 28 }}>
-            {migration.steps.map((step, i) => (
-              <Reveal key={step.title} delay={i * 0.06}>
-                <article className="step">
-                  <div className="num">0{i + 1}</div>
-                  <h3 className="serif" style={{ fontSize: '1.5rem', color: 'var(--navy)', margin: '8px 0' }}>{step.title}</h3>
-                  <p>{step.text}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal>
+            <ProcessFunnel steps={migration.steps} />
+          </Reveal>
         </div>
       </section>
     </>

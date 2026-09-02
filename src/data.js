@@ -1,5 +1,5 @@
 export const site = {
-  name: 'Anand Education Services',
+  name: 'Anand Education | Migration',
   short: 'AES',
   tagline: 'Visa & Education Consultation',
   hours: 'Mon to Fri — 10:00 AM to 6:00 PM , Sat & Sun — Closed',
@@ -43,7 +43,7 @@ export const services = [
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Students applying for an Australian student visa should submit their application online through the official Department of Home Affairs portal. If you’re unsure where to apply or how to begin, our team at Anand Education Services is here to assist you every step of the way.',
+      'Students applying for an Australian student visa should submit their application online through the official Department of Home Affairs portal. If you’re unsure where to apply or how to begin, our team at Anand Education | Migration is here to assist you every step of the way.',
       'Applicants may be accompanied by one person (like a parent or guardian) during consultations if needed. All applications must follow the official Australian Government guidelines.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -82,7 +82,7 @@ export const services = [
       { label: 'Total Charges', value: 'AUD $1650 (subject to change)' },
     ],
     closing:
-      'Australia is a land of stunning natural beauty, vibrant cities, and world-class education. From its welcoming communities to diverse wildlife and modern lifestyle, it offers a rich experience for international students and visitors alike. At Anand Education Services, we’ve proudly assisted students, business professionals, tourists, and individuals with medical needs in making Australia their destination of choice.',
+      'Australia is a land of stunning natural beauty, vibrant cities, and world-class education. From its welcoming communities to diverse wildlife and modern lifestyle, it offers a rich experience for international students and visitors alike. At Anand Education | Migration, we’ve proudly assisted students, business professionals, tourists, and individuals with medical needs in making Australia their destination of choice.',
   },
   {
     slug: 'work-visa',
@@ -96,7 +96,7 @@ export const services = [
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Applicants seeking for work permit (Temporary Skill in demand visa – Subclass 482) or other skilled work visas in Australia should apply through the Department of Home Affairs. It’s essential to submit your application online or through an authorized representative in your region. If you’re unsure where to apply or need clarification, our team at Anand Education Services is here to help guide you.',
+      'Applicants seeking for work permit (Temporary Skill in demand visa – Subclass 482) or other skilled work visas in Australia should apply through the Department of Home Affairs. It’s essential to submit your application online or through an authorized representative in your region. If you’re unsure where to apply or need clarification, our team at Anand Education | Migration is here to help guide you.',
       'Applicants may receive assistance during the process but must follow all Australian government guidelines regarding documentation, eligibility, and health/security clearances.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -135,7 +135,7 @@ export const services = [
       { label: 'Total Charges', value: 'AUD $2,770+ (may vary depending on the visa subclass)' },
     ],
     closing:
-      'Australia is known for its vibrant cities, stunning natural landscapes, and diverse cultural heritage. From world-class education to exciting career opportunities, it offers something for everyone. At Anand Education Services, we’ve helped students, business professionals, tourists, and individuals with medical needs successfully navigate their journey to Australia',
+      'Australia is known for its vibrant cities, stunning natural landscapes, and diverse cultural heritage. From world-class education to exciting career opportunities, it offers something for everyone. At Anand Education | Migration, we’ve helped students, business professionals, tourists, and individuals with medical needs successfully navigate their journey to Australia',
   },
   {
     slug: 'permanent-residency',
@@ -149,7 +149,7 @@ export const services = [
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Applicants for Permanent Residency (PR) in Australia must apply online through the Department of Home Affairs. If you’re unsure where to begin, Anand Education Services provides complete support throughout the process — from checking your eligibility to preparing your final submission.',
+      'Applicants for Permanent Residency (PR) in Australia must apply online through the Department of Home Affairs. If you’re unsure where to begin, Anand Education | Migration provides complete support throughout the process — from checking your eligibility to preparing your final submission.',
       'Applicants may bring a support person for in-office appointments, limited to one per applicant or group. All applications must comply with Australian immigration rules and procedures.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -187,7 +187,7 @@ export const services = [
       { label: 'Estimated Visa Fee', value: 'AUD $4,640+ (subject to subclass and applicant details)' },
     ],
     closing:
-      'Australia offers a high quality of life, excellent healthcare, strong job opportunities, and a clear pathway to citizenship. With our experience and personalized support, Anand Education Services ensures your PR journey is efficient, transparent, and stress-free.',
+      'Australia offers a high quality of life, excellent healthcare, strong job opportunities, and a clear pathway to citizenship. With our experience and personalized support, Anand Education | Migration ensures your PR journey is efficient, transparent, and stress-free.',
   },
   {
     slug: 'citizenship-applications',
@@ -201,7 +201,7 @@ export const services = [
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Applicants for Australian citizenship must apply through the Department of Home Affairs online portal. The application should be submitted based on your current place of residence, and if you’re unsure where to begin, Anand Education Services is here to assist at every stage.',
+      'Applicants for Australian citizenship must apply through the Department of Home Affairs online portal. The application should be submitted based on your current place of residence, and if you’re unsure where to begin, Anand Education | Migration is here to assist at every stage.',
       'While you’re allowed to bring one support person to appointments if required, all applications and interviews must strictly follow Australian Government procedures.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -238,7 +238,7 @@ export const services = [
       { label: 'Final Steps', value: 'Attend the Australian citizenship ceremony' },
     ],
     closing:
-      'Becoming an Australian citizen is a proud milestone. With over a decade of experience, Anand Education Services provides trusted support to make your citizenship journey smooth, clear, and successful.',
+      'Becoming an Australian citizen is a proud milestone. With over a decade of experience, Anand Education | Migration provides trusted support to make your citizenship journey smooth, clear, and successful.',
   },
 ]
 
@@ -319,11 +319,11 @@ export const faqs = {
 export const testimonials = [
   {
     name: 'Kafi Narwal',
-    text: "I'm so happy to finally receive my student visa for higher education after a long wait! While the processing time was longer due to the Australian government’s timeline,Anand Education Service supported me throughout the journey. They guided me through every step, kept me informed, and provided reassurance during the waiting period. I truly appreciate their professionalism and dedication. Highly recommend their service to anyone applying for a visa.",
+    text: "I'm so happy to finally receive my student visa for higher education after a long wait! While the processing time was longer due to the Australian government’s timeline,Anand Education | Migration supported me throughout the journey. They guided me through every step, kept me informed, and provided reassurance during the waiting period. I truly appreciate their professionalism and dedication. Highly recommend their service to anyone applying for a visa.",
   },
   {
     name: 'Mandeep Kaur',
-    text: 'I had a great experience with Anand Education Services. Their service was excellent, and the filing process was smooth, transparent, and fast. They made everything easy and stress-free. Highly recommended!',
+    text: 'I had a great experience with Anand Education | Migration. Their service was excellent, and the filing process was smooth, transparent, and fast. They made everything easy and stress-free. Highly recommended!',
   },
   {
     name: 'Madhu Kamboj',
@@ -336,34 +336,34 @@ export const testimonials = [
 ]
 
 export const partners = [
-  { id: 'trinity', name: 'Trinity Institute (Australia)' },
-  { id: 'federation', name: 'Federation University' },
-  { id: 'campbell', name: 'Campbell Institute' },
-  { id: 'chambers', name: 'Chambers School of Business' },
-  { id: 'anie', name: 'Australian National Institute of Education' },
-  { id: 'kings', name: 'Kings Institute of Vocational Studies' },
+  { id: 'trinity', name: 'Trinity Institute (Australia)', image: '/assets/images/bg-home-campus.jpg' },
+  { id: 'federation', name: 'Federation University', image: '/assets/images/hero-3d-campus.jpg' },
+  { id: 'campbell', name: 'Campbell Institute', image: '/assets/images/art-partners.jpg' },
+  { id: 'chambers', name: 'Chambers School of Business', image: '/assets/images/bg-work-visa.jpg' },
+  { id: 'anie', name: 'Australian National Institute of Education', image: '/assets/images/about-students-3d.jpg' },
+  { id: 'kings', name: 'Kings Institute of Vocational Studies', image: '/assets/images/art-services.jpg' },
 ]
 
 export const blogs = [
   {
-    slug: 'designing-better-links',
-    date: 'Dec 09, 2021',
-    title: 'Designing Better Links For Websites And Emails',
-    excerpt: 'Links are the bridges of the web—when designed well, they guide…',
+    slug: 'student-visa-checklist',
+    date: 'Aug 12, 2026',
+    title: 'Student Visa Checklist Before You Lodge',
+    excerpt: 'CoE, OSHC, English scores and GTE notes — what AES checks before you apply…',
     image: '/assets/images/blog-3d-1.jpg',
   },
   {
-    slug: 'attracting-clients',
-    date: 'Dec 09, 2021',
-    title: 'A Guide To Attracting Clients To Your Agency',
-    excerpt: 'Attracting clients to your agency requires more than just offering great…',
+    slug: 'skilled-work-pathways',
+    date: 'Jul 28, 2026',
+    title: 'Skilled Work Pathways For Australia',
+    excerpt: 'How job offers, skills assessments and English tests fit a 482 or skilled visa…',
     image: '/assets/images/blog-3d-2.jpg',
   },
   {
-    slug: 'react-hooks',
-    date: 'Dec 09, 2021',
-    title: 'Web Development To Update React Hooks Cons',
-    excerpt: 'While React Hooks simplify state and lifecycle management, frequent or careless…',
+    slug: 'pr-to-citizenship',
+    date: 'Jun 04, 2026',
+    title: 'From Permanent Residency To Citizenship',
+    excerpt: 'Residence time, character checks and ceremony steps explained in plain language…',
     image: '/assets/images/blog-3d-3.jpg',
   },
 ]
@@ -371,28 +371,33 @@ export const blogs = [
 export const history = [
   {
     tab: 'Foundation',
-    title: 'Anand Education Services Was Founded',
+    title: 'Anand Education | Migration Was Founded',
     text: 'We began our journey with a vision to provide trusted education and visa guidance to students aspiring to study and settle in Australia.',
+    image: '/assets/images/about-consult-3d.jpg',
   },
   {
     tab: 'Recognition',
     title: 'Recognized for Excellence in Student Support',
     text: 'Within two years, we were recognized for our outstanding support in guiding students through complex visa and university application processes.',
+    image: '/assets/images/about-students-3d.jpg',
   },
   {
     tab: 'Partnerships',
     title: 'Partnered with Leading Australian Institutions',
     text: 'We formed official partnerships with top Australian universities and colleges, expanding access to high-quality education for international students.',
+    image: '/assets/images/bg-home-campus.jpg',
   },
   {
     tab: 'Impact',
     title: 'Served 10,000+ Happy Clients',
     text: 'A major milestone — over 10,000 students, professionals, and families successfully supported in their education and migration journey',
+    image: '/assets/images/about-city-3d.jpg',
   },
   {
     tab: 'Expansion',
-    title: 'Anand Education Services Was Founded',
-    text: 'We began our journey with a vision to provide trusted education and visa guidance to students aspiring to study and settle in Australia.',
+    title: 'Offices Across Australia and India',
+    text: 'We expanded our Blacktown and Karnal desks so students and families can meet consultants in person for visa and education planning.',
+    image: '/assets/images/bg-page-office.jpg',
   },
 ]
 
@@ -400,18 +405,22 @@ export const serviceHighlights = [
   {
     title: 'Proper Information',
     text: 'Get expert insights on work permit approvals tailored for professionals in the education sector.',
+    image: '/assets/images/bg-student-visa.jpg',
   },
   {
     title: 'Advice & Consultancy',
     text: 'Navigate your career abroad with guidance on securing work permits in higher education.',
+    image: '/assets/images/about-consult-3d.jpg',
   },
   {
     title: 'Tour & Travel Guidelines',
     text: 'Explore overseas opportunities with travel advice and work permit tips for academic professionals.',
+    image: '/assets/images/bg-home-travel.jpg',
   },
   {
     title: 'Education Tips and Tricks',
     text: 'Learn the best strategies to obtain work permits and succeed in global higher education roles.',
+    image: '/assets/images/hero-3d-campus.jpg',
   },
 ]
 
@@ -426,10 +435,10 @@ export const migration = {
   intro:
     'AES Migration (sample copy) helps individuals and families plan study, skilled work, partner, and permanent residency pathways to Australia. All text on this page is dummy content for layout and review.',
   highlights: [
-    { title: 'Visa Pathway Review', text: 'Dummy note: we map your profile to student, skilled, partner, or PR options before any filing starts.' },
-    { title: 'Document Checklist', text: 'Dummy note: identity, skills assessment, English tests, and financial evidence are organised into a clear list.' },
-    { title: 'Application Support', text: 'Dummy note: forms, uploads, and follow-ups are prepared with your registered agent for review.' },
-    { title: 'After-Visa Guidance', text: 'Dummy note: arrival, COE, work conditions, and next-step visas are explained in plain language.' },
+    { title: 'Visa Pathway Review', text: 'Dummy note: we map your profile to student, skilled, partner, or PR options before any filing starts.', image: '/assets/images/art-migration.jpg' },
+    { title: 'Document Checklist', text: 'Dummy note: identity, skills assessment, English tests, and financial evidence are organised into a clear list.', image: '/assets/images/art-faq.jpg' },
+    { title: 'Application Support', text: 'Dummy note: forms, uploads, and follow-ups are prepared with your registered agent for review.', image: '/assets/images/bg-page-office.jpg' },
+    { title: 'After-Visa Guidance', text: 'Dummy note: arrival, COE, work conditions, and next-step visas are explained in plain language.', image: '/assets/images/bg-home-sydney.jpg' },
   ],
   steps: [
     { title: 'Free profile discussion', text: 'Sample step: share your goals, occupation, and timeline in a 20-minute consult.' },
@@ -484,33 +493,23 @@ export const heroThemes = {
   },
   contact: {
     art: '/assets/images/art-contact.jpg',
-    bg: '/assets/images/bg-page-office.jpg',
-    floats: [
-      '/assets/images/float-contact-phone.png',
-      '/assets/images/float-contact-mail.png',
-    ],
+    bg: '/assets/images/bg-contact.jpg',
+    floats: [],
   },
   about: {
     art: '/assets/images/art-about.jpg',
-    bg: '/assets/images/bg-page-office.jpg',
-    floats: [
-      '/assets/images/float-about-handshake.png',
-    ],
+    bg: '/assets/images/bg-about.jpg',
+    floats: [],
   },
   partners: {
     art: '/assets/images/art-partners.jpg',
     bg: '/assets/images/bg-home-campus.jpg',
-    floats: [
-      '/assets/images/float-partners-campus.png',
-    ],
+    floats: [],
   },
   faq: {
     art: '/assets/images/art-faq.jpg',
-    bg: '/assets/images/bg-page-office.jpg',
-    floats: [
-      '/assets/images/float-faq-mark.png',
-      '/assets/images/float-faq-bulb.png',
-    ],
+    bg: '/assets/images/bg-faq.jpg',
+    floats: [],
   },
   migration: {
     art: '/assets/images/art-migration.jpg',

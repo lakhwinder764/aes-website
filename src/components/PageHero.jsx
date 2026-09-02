@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { heroThemes } from '../data.js'
+import { heroThemes, site } from '../data.js'
+import SceneChips from './SceneChips.jsx'
 
 export default function PageHero({ title, theme = 'services' }) {
   const pack = heroThemes[theme] || heroThemes.services
@@ -7,9 +8,10 @@ export default function PageHero({ title, theme = 'services' }) {
   return (
     <section className="page-hero">
       {pack.bg ? (
-        <div className="page-hero-bg" style={{ backgroundImage: `url(${pack.bg})` }} />
+        <img className="page-hero-bg" src={pack.bg} alt="" />
       ) : null}
       <div className="shade" />
+      <SceneChips theme={theme} />
       <div className="copy">
         <motion.p
           className="eyebrow"
@@ -17,7 +19,7 @@ export default function PageHero({ title, theme = 'services' }) {
           animate={{ opacity: 1, y: 0 }}
           style={{ color: '#e0a85a', justifyContent: 'center' }}
         >
-          Anand Education Services
+          <span className="hot-info brand-name">{site.name}</span>
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 28 }}

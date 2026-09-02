@@ -11,7 +11,7 @@ export default function FAQ() {
 
   return (
     <>
-      <PageHero title="Faq" theme="faq" />
+      <PageHero title="FAQ" theme="faq" />
       <section className="section">
         <div className="container split">
           <div>
@@ -34,7 +34,10 @@ export default function FAQ() {
               ))}
             </div>
           </div>
-          <ContactForm />
+          <div>
+            <img className="section-photo" src="/assets/images/bg-faq.jpg" alt="Visa questions and guidance" style={{ marginBottom: 22 }} />
+            <ContactForm />
+          </div>
         </div>
       </section>
     </>

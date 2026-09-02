@@ -19,12 +19,16 @@ export default function ContactForm() {
   return (
     <form className="form" onSubmit={onSubmit}>
       <h3 className="serif" style={{ fontSize: '2rem', color: 'var(--navy)' }}>Get in Touch</h3>
-      <input name="name" required placeholder="Your Name" />
-      <input name="email" type="email" required placeholder="Your Email" />
-      <input name="phone" required placeholder="Your Phone" />
-      <textarea name="message" required placeholder="Your Message" />
+      <label htmlFor="enquiry-name">Your name</label>
+      <input id="enquiry-name" name="name" required placeholder="Full name" />
+      <label htmlFor="enquiry-email">Your email</label>
+      <input id="enquiry-email" name="email" type="email" required placeholder="name@email.com" />
+      <label htmlFor="enquiry-phone">Your phone</label>
+      <input id="enquiry-phone" name="phone" required placeholder="Mobile number" />
+      <label htmlFor="enquiry-message">Your message</label>
+      <textarea id="enquiry-message" name="message" required placeholder="How can we help?" />
       <button className="btn btn-copper" type="submit">Submit Now</button>
-      {sent && <p className="success">Thank you. Your email app will open so we can receive your enquiry.</p>}
+      {sent && <p className="success"><strong>Thank you.</strong> Your email app will open so we can receive your enquiry.</p>}
     </form>
   )
 }

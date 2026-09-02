@@ -29,6 +29,7 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import ContactForm from '../components/ContactForm.jsx'
 import ServiceMedia from '../components/ServiceMedia.jsx'
+import ProcessFunnel from '../components/ProcessFunnel.jsx'
 import { serviceFaqs, services, site } from '../data.js'
 
 function documentIcon(text) {
@@ -84,8 +85,13 @@ export default function ServiceDetail() {
             <p className="eyebrow">{service.eyebrow}</p>
             <h2 className="section-title">{service.heading}</h2>
             {service.intro.map((p) => (
-              <p key={p.slice(0, 24)} className="lead" style={{ marginBottom: 14 }}>{p}</p>
+              <p key={p.slice(0, 24)} className="lead" style={{ marginBottom: 14 }}>
+                {p}
+              </p>
             ))}
+            {service.banner ? (
+              <img className="section-photo" src={service.banner} alt="" style={{ marginTop: 18, height: 220 }} />
+            ) : null}
           </Reveal>
           <Reveal>
             <ServiceMedia service={service} className="service-detail-media" />
@@ -99,17 +105,9 @@ export default function ServiceDetail() {
             <h2 className="section-title">{service.processTitle}</h2>
             {service.processLead && <p className="lead">{service.processLead}</p>}
           </Reveal>
-          <div className="process" style={{ marginTop: 28 }}>
-            {service.steps.map((step, i) => (
-              <Reveal key={step.title} delay={i * 0.08}>
-                <article className="step">
-                  <div className="num">0{i + 1}</div>
-                  <h3 className="serif" style={{ fontSize: '1.6rem', color: 'var(--navy)', margin: '8px 0' }}>{step.title}</h3>
-                  <p>{step.text}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
+          <Reveal>
+            <ProcessFunnel steps={service.steps} />
+          </Reveal>
         </div>
       </section>
 
@@ -147,7 +145,7 @@ export default function ServiceDetail() {
               })}
             </div>
             <p className="facts-call">
-              Call us: <a className="link" href={site.mobileHref}>{site.mobile}</a>
+              <strong>Call us:</strong> <a className="link" href={site.mobileHref}>{site.mobile}</a>
             </p>
           </Reveal>
         </div>

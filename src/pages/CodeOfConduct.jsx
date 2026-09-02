@@ -11,8 +11,9 @@ export default function CodeOfConduct() {
             <p className="eyebrow">Registered Migration Agent</p>
             <h2 className="section-title">Code of Conduct for registered migration agents</h2>
             <p className="lead">
-              Anand Education Services follows the official Code of Conduct for registered migration agents. You can read the full document below or download it for your records.
+              Anand Education | Migration follows the official <strong>Code of Conduct for registered migration agents</strong>. You can read the full document below or <strong>download the PDF</strong> for your records.
             </p>
+            <img className="section-photo" src="/assets/images/art-conduct.jpg" alt="Professional standards" style={{ margin: '20px 0', maxHeight: 280 }} />
             <a className="btn btn-copper" href="/assets/code-of-conduct.pdf" target="_blank" rel="noreferrer" style={{ margin: '20px 0 28px' }}>
               Download PDF
             </a>

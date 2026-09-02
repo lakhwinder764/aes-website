@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react'
+import { Facebook, Instagram, Mail, MapPin, Smartphone } from 'lucide-react'
+import LandlineIcon from './LandlineIcon.jsx'
 import { services, site } from '../data.js'
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer js-hot-section">
       <div className="container footer-grid">
-        <div>
-          <img src="/assets/logo.jpg" alt="AES" style={{ height: 60, borderRadius: 10, marginBottom: 16, background: '#fff', padding: '4px 8px' }} />
-          <p>Effective Visa Solution. Our professionalism, honesty, sincerity & dedication to client service has helped our clients to fulfill their wishes.</p>
-          <div style={{ display: 'flex', gap: 12, marginTop: 16 }}>
+        <div className="footer-brand">
+          <img className="logo footer-logo" src="/assets/logo.png" alt="Anand Education | Migration" />
+          <p className="footer-name hot-info">Anand Education | Migration</p>
+          <p><strong>Effective Visa Solution.</strong> Our professionalism, honesty, sincerity and dedication to client service has helped our clients to fulfill their wishes.</p>
+          <div className="footer-social">
             <a href={site.social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={18} /></a>
             <a href={site.social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={18} /></a>
           </div>
@@ -18,12 +20,12 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">services</Link></li>
+            <li><Link to="/services">Services</Link></li>
             <li><Link to="/migration">Migration</Link></li>
             <li><Link to="/partners">Partners</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/faq">Faq</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/code-of-conduct">Code of Conduct</Link></li>
           </ul>
         </div>
@@ -37,23 +39,50 @@ export default function Footer() {
         </div>
         <div>
           <h4>Get in Touch</h4>
-          <ul>
-            <li><a href={site.phoneHref}><Phone size={14} /> {site.phone}</a></li>
-            <li><a href={site.mobileHref}><Phone size={14} /> {site.mobile}</a></li>
-            <li><a href={`mailto:${site.email}`}><Mail size={14} /> {site.email}</a></li>
-            <li>{site.marn}</li>
-            <li><a href={site.australia.map} target="_blank" rel="noreferrer"><MapPin size={14} /> {site.australia.address}</a></li>
-            <li><a href={site.india.map} target="_blank" rel="noreferrer"><MapPin size={14} /> {site.india.address}</a></li>
+          <ul className="foot-contact">
+            <li>
+              <a className="foot-row hot-info" href={site.phoneHref}>
+                <LandlineIcon size={16} />
+                <span>{site.phone}</span>
+              </a>
+            </li>
+            <li>
+              <a className="foot-row hot-info" href={site.mobileHref}>
+                <Smartphone size={16} />
+                <span>{site.mobile}</span>
+              </a>
+            </li>
+            <li>
+              <a className="foot-row hot-info" href={`mailto:${site.email}`}>
+                <Mail size={16} />
+                <span>{site.email}</span>
+              </a>
+            </li>
+            <li>
+              <p className="foot-marn hot-info">{site.marn}</p>
+            </li>
+            <li>
+              <a className="foot-row hot-info" href={site.australia.map} target="_blank" rel="noreferrer">
+                <MapPin size={16} />
+                <span>{site.australia.address}</span>
+              </a>
+            </li>
+            <li>
+              <a className="foot-row hot-info" href={site.india.map} target="_blank" rel="noreferrer">
+                <MapPin size={16} />
+                <span>{site.india.address}</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div className="container">
         <p className="ack">
-          Anand Education Services acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.
+          Anand Education | Migration acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.
         </p>
         <div className="legal">
-          <span>Copyright © 2026 Anand Education Services®. All rights reserved.</span>
-          <a href={site.phoneHref}>Call - Or - SMS {site.phone}</a>
+          <span>Copyright © 2026 Anand Education | Migration®. All rights reserved.</span>
+          <a className="hot-info" href={site.phoneHref}>Call or SMS {site.phone}</a>
         </div>
       </div>
     </footer>

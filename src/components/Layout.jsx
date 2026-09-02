@@ -2,9 +2,9 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
-import CursorGlow from './CursorGlow.jsx'
 import DepthField from './DepthField.jsx'
 import ScrollProgress from './ScrollProgress.jsx'
+import VisitEffects from './VisitEffects.jsx'
 import { Phone, MessageCircle } from 'lucide-react'
 import { site } from '../data.js'
 
@@ -15,8 +15,8 @@ export default function Layout() {
   return (
     <>
       <DepthField />
-      <CursorGlow />
       <Navbar overHero={overHero} />
+      <VisitEffects path={pathname} />
       <AnimatePresence mode="wait">
         <motion.main
           key={pathname}

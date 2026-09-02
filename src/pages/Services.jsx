@@ -10,20 +10,21 @@ import { serviceHighlights, services } from '../data.js'
 export default function Services() {
   return (
     <>
-      <PageHero title="services" theme="services" />
+      <PageHero title="Services" theme="services" />
       <section className="section">
         <div className="container center">
           <Reveal>
             <p className="eyebrow">Featured Services</p>
             <h2 className="section-title">We Take the Challenge to Make Life Easier</h2>
             <p className="lead">
-              For over many years, Anand Education Services has supported students, business professionals, tourists, and individuals with medical needs in navigating the complexities of Australian visas and education. We believe in simplifying the journey — whether it's studying in Australia, reuniting with family, or building a new life through skilled migration. Our expert guidance and personalized support have made it easier for thousands to achieve their goals.
+              For over many years, <strong>Anand Education | Migration</strong> has supported students, business professionals, tourists, and people with medical needs with Australian visas and education. We simplify the journey — whether it is <strong>studying in Australia</strong>, reuniting with family, or building a new life through <strong>skilled migration</strong>.
             </p>
           </Reveal>
           <div className="highlights" style={{ marginTop: 36 }}>
             {serviceHighlights.map((h, i) => (
               <Reveal key={h.title} delay={i * 0.08}>
                 <article className="highlight">
+                  <img className="highlight-photo" src={h.image} alt={h.title} />
                   <h3>{h.title}</h3>
                   <p>{h.text}</p>
                 </article>
@@ -61,7 +62,7 @@ export default function Services() {
             <p className="eyebrow">Working Process</p>
             <h2 className="section-title">We Take 1–2 Working Months for Complete Processing</h2>
             <p className="lead">
-              With over many years of experience, Anand Education Services has successfully assisted students, business professionals, tourists, and individuals with medical needs in achieving their Australian visa and education goals. Our streamlined process ensures thorough guidance, timely documentation, and consistent follow-ups. Depending on the visa type and case complexity, the full process typically takes 1 to 2 working months — handled with care, accuracy, and efficiency by our experienced team.
+              Our streamlined process covers thorough guidance, timely documentation, and consistent follow-ups. Depending on the visa type and case, the full process typically takes <strong>1 to 2 working months</strong> — handled with care and accuracy by our experienced team.
             </p>
           </Reveal>
           <Reveal>

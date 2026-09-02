@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight, ArrowUpRight, Briefcase, FileCheck, GraduationCap, Landmark } from 'lucide-react'
 import Reveal from '../components/Reveal.jsx'
 import Counters from '../components/Counters.jsx'
@@ -9,65 +8,55 @@ import TiltCard from '../components/TiltCard.jsx'
 import PartnerMark from '../components/PartnerLogos.jsx'
 import WorldMap from '../components/WorldMap.jsx'
 import ServiceMedia from '../components/ServiceMedia.jsx'
-import FloatStage from '../components/FloatStage.jsx'
+import SceneChips from '../components/SceneChips.jsx'
 import { blogs, partners, services, migration } from '../data.js'
 
 const slides = [
-  { type: 'image', src: '/assets/images/bg-page-office.jpg' },
+  { type: 'image', src: '/assets/images/carousel-student.jpg' },
+  { type: 'image', src: '/assets/images/carousel-work.jpg' },
+  { type: 'image', src: '/assets/images/carousel-pr.jpg' },
+  { type: 'image', src: '/assets/images/carousel-citizenship.jpg' },
   { type: 'image', src: '/assets/images/bg-home-sydney.jpg' },
-  { type: 'image', src: '/assets/images/bg-home-travel.jpg' },
-  { type: 'image', src: '/assets/images/bg-home-campus.jpg' },
 ]
 
 const visaIcons = [GraduationCap, Briefcase, Landmark, FileCheck]
 
-const wordAnim = {
-  hidden: { opacity: 0, y: 32, rotateX: 28 },
-  show: (i) => ({ opacity: 1, y: 0, rotateX: 0, transition: { delay: 0.12 + i * 0.08, duration: 0.8, ease: [0.22, 1, 0.36, 1] } }),
-}
-
 export default function Home() {
   const [slide, setSlide] = useState(0)
-  const current = slides[slide]
+  const total = slides.length
 
   useEffect(() => {
-    const id = setInterval(() => setSlide((s) => (s + 1) % slides.length), 6500)
+    const id = setInterval(() => setSlide((s) => (s + 1) % total), 6500)
     return () => clearInterval(id)
-  }, [])
+  }, [slide, total])
+
+  const prev = () => setSlide((s) => (s - 1 + total) % total)
+  const next = () => setSlide((s) => (s + 1) % total)
 
   return (
     <>
       <section className="hero">
-        <img className="hero-bg-img" src={current.src} alt="" />
-        <div className="hero-bg" style={{ backgroundImage: `url(${current.src})` }} />
+        <img className="hero-bg-img" src={slides[slide].src} alt="" />
         <div className="overlay" />
-        <div className="float-orbs" aria-hidden="true">
-          <div className="orb a" />
-          <div className="orb b" />
-        </div>
-        <FloatStage variant="hero" theme="home" />
+        <SceneChips theme="home" />
         <div className="container hero-copy">
-          <motion.div className="hero-chip" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
-            Effective Visa Solution
-          </motion.div>
+          <p className="hero-chip">Effective Visa Solution</p>
           <h1>
-            {['Visa &', 'Education', 'Consultation'].map((w, i) => (
-              <motion.span key={w} style={{ display: 'block', transformOrigin: 'left bottom' }} custom={i} variants={wordAnim} initial="hidden" animate="show">
-                {w}
-              </motion.span>
-            ))}
+            Visa <span className="amp">&</span>
+            <span>Education</span>
+            <span>Consultation</span>
           </h1>
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.42 }}>
-            Our professionalism, honesty, sincerity & dedication to client service has helped our clients to fulfill their wishes
-          </motion.p>
-          <motion.div className="hero-actions" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.55 }}>
+          <p>
+            Our <strong>professionalism, honesty, sincerity</strong> and dedication to client service has helped our clients to fulfill their wishes
+          </p>
+          <div className="hero-actions">
             <Link className="btn btn-copper" to="/contact">Book Now</Link>
             <Link className="btn btn-ghost" to="/services">Explore Services</Link>
-          </motion.div>
+          </div>
         </div>
         <div className="hero-nav">
-          <button onClick={() => setSlide((s) => (s - 1 + slides.length) % slides.length)} aria-label="Previous"><ArrowLeft size={18} /></button>
-          <button onClick={() => setSlide((s) => (s + 1) % slides.length)} aria-label="Next"><ArrowRight size={18} /></button>
+          <button type="button" onClick={prev} aria-label="Previous"><ArrowLeft size={18} /></button>
+          <button type="button" onClick={next} aria-label="Next"><ArrowRight size={18} /></button>
         </div>
       </section>
 
@@ -159,10 +148,10 @@ export default function Home() {
             <p className="eyebrow">About AES</p>
             <h2 className="section-title">Many Years of Your Trust and Recommendation</h2>
             <p className="lead">
-              For over many years, Our experienced consultants are helping individuals realize their dreams of studying, working, visiting, or settling in Australia. We specialize in a wide range of Australian visa services, including student visas, skilled migration, visitor visas, family reunification, and business or investment-based immigration.
+              For over many years, our experienced consultants help people <strong>study, work, visit, or settle in Australia</strong>. We specialise in <strong>student visas</strong>, <strong>skilled migration</strong>, visitor visas, family reunification, and business or investment-based immigration.
             </p>
             <p className="lead" style={{ marginTop: 14 }}>
-              With deep knowledge of Australian immigration policies and strong ties with reputed Australian institutions, we offer personalized guidance every step of the way. Whether you're aiming to study at a top university, reunite with family, or build a future in Australia, AES is here to make the journey smooth and successful.
+              With deep knowledge of <strong>Australian immigration policies</strong> and strong ties with reputed Australian institutions, we offer personalised guidance every step of the way. Whether you want to study at a top university, reunite with family, or build a future in Australia, <strong>AES</strong> is here to make the journey smooth and successful.
             </p>
             <Link className="btn btn-navy" to="/about" style={{ marginTop: 22 }}>Read More</Link>
           </Reveal>
@@ -185,7 +174,7 @@ export default function Home() {
           <Reveal>
             <h2 className="section-title">Study. Migrate. Succeed.</h2>
             <p className="lead">
-              At Anand Education Services, we do more than just paperwork — we guide dreams. Whether you're pursuing education, seeking permanent residency, or looking for the right university match, we’ve got your back. From counseling to visa filing, and from career planning to scholarship guidance, we offer end-to-end support tailored to your goals.
+              At <strong>Anand Education | Migration</strong>, we do more than paperwork — we guide dreams. Whether you are pursuing <strong>education</strong>, seeking <strong>permanent residency</strong>, or looking for the right university match, we support you from counselling to visa filing, career planning, and scholarship guidance.
             </p>
             <Link className="btn btn-copper" to="/partners" style={{ marginTop: 18 }}>More Agencies</Link>
           </Reveal>
@@ -211,7 +200,7 @@ export default function Home() {
             <p className="eyebrow">Our Partners</p>
             <h2 className="section-title">Partner Institutions in Australia</h2>
             <p className="lead">
-              Partner Companies & Institutions in Australia We proudly collaborate with a wide network of trusted Australian institutions and companies to deliver quality education and visa solutions. Over the years, we have assisted students, business professionals, tourists, and individuals with medical needs in obtaining Australian visas. We also support family-based immigration and offer expert counseling for permanent residency and citizenship pathways in Australia.
+              We proudly collaborate with a wide network of <strong>trusted Australian institutions</strong> to deliver quality education and visa solutions. Over the years we have assisted students, business professionals, tourists, and people with medical needs. We also support <strong>family-based immigration</strong> and counselling for <strong>permanent residency</strong> and <strong>citizenship</strong> pathways.
             </p>
             <Link className="link" to="/partners">See All Partners →</Link>
           </Reveal>

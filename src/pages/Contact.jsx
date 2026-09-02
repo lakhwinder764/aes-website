@@ -1,12 +1,14 @@
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import ContactForm from '../components/ContactForm.jsx'
+import LandlineIcon from '../components/LandlineIcon.jsx'
+import { Smartphone } from 'lucide-react'
 import { site } from '../data.js'
 
 export default function Contact() {
   return (
     <>
-      <PageHero title="Contact" theme="contact" />
+      <PageHero title="Contact Us" theme="contact" />
       <section className="section">
         <div className="container contact-grid">
           <Reveal>
@@ -14,20 +16,61 @@ export default function Contact() {
           </Reveal>
           <div>
             <Reveal>
-              <article className="office">
-                <h3 className="serif" style={{ fontSize: '1.8rem' }}>Anand Education Services – Australia Office</h3>
-                <p style={{ marginTop: 12 }}><b>Address:</b> {site.australia.address}</p>
-                <p><b>Email:</b> <a href={`mailto:${site.email}`}>{site.email}</a></p>
-                <p><b>Landline:</b> <a href={site.phoneHref}>{site.phone}</a></p>
-                <p><b>Phone:</b> <a href={site.mobileHref}>{site.mobile}</a></p>
-                <p><b>Opening:</b> Monday -Friday -10:00 AM -6:00 PM , Saturday & Sunday — Closed</p>
-                <p style={{ marginTop: 10 }}>{site.marn}</p>
+              <article className="office js-hot-section">
+                <img src="/assets/images/bg-contact.jpg" alt="Australia office" />
+                <div className="office-body">
+                  <h3 className="serif hot-info">Anand Education | Migration – Australia Office</h3>
+                  <dl className="office-list">
+                    <div>
+                      <dt>Address</dt>
+                      <dd>{site.australia.address}</dd>
+                    </div>
+                    <div>
+                      <dt>Email</dt>
+                      <dd><a href={`mailto:${site.email}`}>{site.email}</a></dd>
+                    </div>
+                    <div>
+                      <dt>Landline</dt>
+                      <dd>
+                        <a className="office-line" href={site.phoneHref}>
+                          <LandlineIcon size={16} />
+                          <span>{site.phone}</span>
+                        </a>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Phone</dt>
+                      <dd>
+                        <a className="office-line" href={site.mobileHref}>
+                          <Smartphone size={16} />
+                          <span>{site.mobile}</span>
+                        </a>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Opening</dt>
+                      <dd>Monday – Friday, 10:00 AM – 6:00 PM<br />Saturday &amp; Sunday — Closed</dd>
+                    </div>
+                    <div>
+                      <dt>MARN</dt>
+                      <dd>{site.marn.replace(/^MARN\s*/i, '')}</dd>
+                    </div>
+                  </dl>
+                </div>
               </article>
             </Reveal>
             <Reveal delay={0.1}>
-              <article className="office">
-                <h3 className="serif" style={{ fontSize: '1.8rem' }}>India Office</h3>
-                <p style={{ marginTop: 12 }}><b>Address:</b> {site.india.address}</p>
+              <article className="office js-hot-section">
+                <img src="/assets/images/about-city-3d.jpg" alt="India office" />
+                <div className="office-body">
+                  <h3 className="serif">India Office</h3>
+                  <dl className="office-list">
+                    <div>
+                      <dt>Address</dt>
+                      <dd>{site.india.address}</dd>
+                    </div>
+                  </dl>
+                </div>
               </article>
             </Reveal>
             <iframe

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { Clock, MapPin, Menu, Phone, X } from 'lucide-react'
+import { Clock, MapPin, Menu, X } from 'lucide-react'
+import LandlineIcon from './LandlineIcon.jsx'
 import { site, services } from '../data.js'
 
 export default function Navbar({ overHero }) {
@@ -31,7 +32,7 @@ export default function Navbar({ overHero }) {
             <a href={site.australia.map} target="_blank" rel="noreferrer">
               <MapPin size={13} /> Our Location
             </a>
-            <a href={site.phoneHref}><Phone size={13} /> {site.phone}</a>
+            <a href={site.phoneHref}><LandlineIcon size={13} /> {site.phone}</a>
             <Link to="/contact">Apply Now</Link>
           </div>
         </div>
@@ -39,7 +40,7 @@ export default function Navbar({ overHero }) {
       <div className="nav-shell">
         <div className="container nav">
           <Link to="/" onClick={() => setOpen(false)}>
-            <img className="logo" src="/assets/logo.jpg" alt="Anand Education Migration" />
+            <img className="logo" src="/assets/logo.png" alt="Anand Education | Migration" />
           </Link>
           <button className="menu-toggle" onClick={() => setOpen((v) => !v)} aria-label="Menu">
             {open ? <X /> : <Menu />}
@@ -57,10 +58,9 @@ export default function Navbar({ overHero }) {
             </div>
             <NavLink to="/migration">Migration</NavLink>
             <NavLink to="/partners">Partners</NavLink>
-            <NavLink to="/faq">Faq</NavLink>
+            <NavLink to="/faq">FAQ</NavLink>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
-            <Link className="btn btn-copper" to="/contact" style={{ marginLeft: 8, padding: '10px 18px' }}>
+            <Link className="nav-contact" to="/contact">
               Contact Us
             </Link>
           </nav>
