@@ -5,11 +5,13 @@ import Reveal from '../components/Reveal.jsx'
 import Counters from '../components/Counters.jsx'
 import TiltCard from '../components/TiltCard.jsx'
 import ServiceMedia from '../components/ServiceMedia.jsx'
+import { PageSeo } from '../components/Seo.jsx'
 import { serviceHighlights, services } from '../data.js'
 
 export default function Services() {
   return (
     <>
+      <PageSeo path="/services" />
       <PageHero title="Services" theme="services" />
       <section className="section">
         <div className="container center">
@@ -17,7 +19,7 @@ export default function Services() {
             <p className="eyebrow">Featured Services</p>
             <h2 className="section-title">We Take the Challenge to Make Life Easier</h2>
             <p className="lead">
-              For over many years, <strong>Anand Education | Migration</strong> has supported students, business professionals, tourists, and people with medical needs with Australian visas and education. We simplify the journey — whether it is <strong>studying in Australia</strong>, reuniting with family, or building a new life through <strong>skilled migration</strong>.
+              For over many years, <strong>Anand Education & Migration</strong> has supported students, business professionals, tourists, and people with medical needs with Australian visas and education. We simplify the journey — whether it is <strong>studying in Australia</strong>, reuniting with family, or building a new life through <strong>skilled migration</strong>.
             </p>
           </Reveal>
           <div className="highlights" style={{ marginTop: 36 }}>

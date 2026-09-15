@@ -3,11 +3,13 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import TiltCard from '../components/TiltCard.jsx'
 import ProcessFunnel from '../components/ProcessFunnel.jsx'
+import { PageSeo } from '../components/Seo.jsx'
 import { migration } from '../data.js'
 
 export default function Migration() {
   return (
     <>
+      <PageSeo path="/migration" />
       <PageHero title="Migration" theme="migration" />
       <section className="section">
         <div className="container split">
@@ -16,7 +18,7 @@ export default function Migration() {
             <h2 className="section-title">Registered Migration Support (Sample Page)</h2>
             <p className="lead">{migration.intro}</p>
             <p className="lead" style={{ marginTop: 14 }}>{migration.agent.bio}</p>
-            <Link className="btn btn-copper" to="/contact" style={{ marginTop: 22 }}>Book a Dummy Consult</Link>
+            <Link className="btn btn-copper" to="/book-appointment" style={{ marginTop: 22 }}>Book an Appointment</Link>
           </Reveal>
           <Reveal>
             <TiltCard>

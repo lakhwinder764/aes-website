@@ -9,6 +9,7 @@ import PartnerMark from '../components/PartnerLogos.jsx'
 import WorldMap from '../components/WorldMap.jsx'
 import ServiceMedia from '../components/ServiceMedia.jsx'
 import SceneChips from '../components/SceneChips.jsx'
+import { PageSeo } from '../components/Seo.jsx'
 import { blogs, partners, services, migration } from '../data.js'
 
 const slides = [
@@ -35,8 +36,9 @@ export default function Home() {
 
   return (
     <>
+      <PageSeo path="/" />
       <section className="hero">
-        <img className="hero-bg-img" src={slides[slide].src} alt="" />
+        <img className="hero-bg-img" src={slides[slide].src} alt="Anand Education & Migration visa and education consultation" />
         <div className="overlay" />
         <SceneChips theme="home" />
         <div className="container hero-copy">
@@ -124,7 +126,10 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <Link className="btn btn-navy" to="/migration" style={{ marginTop: 22 }}>View Migration Page</Link>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 22 }}>
+              <Link className="btn btn-navy" to="/migration">View Migration Page</Link>
+              <Link className="btn btn-copper" to="/book-appointment">Book an Appointment</Link>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -132,7 +137,7 @@ export default function Home() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div className="scholarship">
-            <img src="/assets/images/hero-3d-campus.jpg" alt="" />
+            <img src="/assets/images/hero-3d-campus.jpg" alt="Australian university campus scholarships" />
             <div className="shade" />
             <Reveal className="copy">
               <h2 className="section-title" style={{ color: '#fff' }}>20+ Best Universities Scholarship Programs</h2>
@@ -174,7 +179,7 @@ export default function Home() {
           <Reveal>
             <h2 className="section-title">Study. Migrate. Succeed.</h2>
             <p className="lead">
-              At <strong>Anand Education | Migration</strong>, we do more than paperwork — we guide dreams. Whether you are pursuing <strong>education</strong>, seeking <strong>permanent residency</strong>, or looking for the right university match, we support you from counselling to visa filing, career planning, and scholarship guidance.
+              At <strong>Anand Education & Migration</strong>, we do more than paperwork — we guide dreams. Whether you are pursuing <strong>education</strong>, seeking <strong>permanent residency</strong>, or looking for the right university match, we support you from counselling to visa filing, career planning, and scholarship guidance.
             </p>
             <Link className="btn btn-copper" to="/partners" style={{ marginTop: 18 }}>More Agencies</Link>
           </Reveal>
@@ -187,7 +192,7 @@ export default function Home() {
       <section className="section" style={{ paddingTop: 10 }}>
         <div className="container">
           <div className="cta-band">
-            <img src="/assets/images/cta-3d.png" alt="" className="cta-3d" />
+            <img src="/assets/images/cta-3d.png" alt="Skilled work and technical courses abroad" className="cta-3d" />
             <h3>Get a skilled job in abroad taking our technical courses.</h3>
             <Link className="btn btn-copper" to="/contact">Apply Now</Link>
           </div>

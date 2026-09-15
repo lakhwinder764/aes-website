@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Mail, MapPin, Smartphone } from 'lucide-react'
+import { Facebook, Instagram, Mail, MapPin } from 'lucide-react'
 import LandlineIcon from './LandlineIcon.jsx'
 import { services, site } from '../data.js'
 
@@ -8,8 +8,8 @@ export default function Footer() {
     <footer className="footer js-hot-section">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img className="logo footer-logo" src="/assets/logo.png" alt="Anand Education | Migration" />
-          <p className="footer-name hot-info">Anand Education | Migration</p>
+          <img className="logo footer-logo" src="/assets/logo.png" alt="Anand Education & Migration" />
+          <p className="footer-name hot-info">Anand Education & Migration</p>
           <p><strong>Effective Visa Solution.</strong> Our professionalism, honesty, sincerity and dedication to client service has helped our clients to fulfill their wishes.</p>
           <div className="footer-social">
             <a href={site.social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={18} /></a>
@@ -22,6 +22,7 @@ export default function Footer() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/migration">Migration</Link></li>
+            <li><Link to="/book-appointment">Book Appointment</Link></li>
             <li><Link to="/partners">Partners</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
@@ -44,12 +45,6 @@ export default function Footer() {
               <a className="foot-row hot-info" href={site.phoneHref}>
                 <LandlineIcon size={16} />
                 <span>{site.phone}</span>
-              </a>
-            </li>
-            <li>
-              <a className="foot-row hot-info" href={site.mobileHref}>
-                <Smartphone size={16} />
-                <span>{site.mobile}</span>
               </a>
             </li>
             <li>
@@ -78,10 +73,10 @@ export default function Footer() {
       </div>
       <div className="container">
         <p className="ack">
-          Anand Education | Migration acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.
+          Anand Education & Migration acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.
         </p>
         <div className="legal">
-          <span>Copyright © 2026 Anand Education | Migration®. All rights reserved.</span>
+          <span>Copyright © 2026 Anand Education & Migration®. All rights reserved.</span>
           <a className="hot-info" href={site.phoneHref}>Call or SMS {site.phone}</a>
         </div>
       </div>

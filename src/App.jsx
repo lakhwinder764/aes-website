@@ -10,6 +10,7 @@ import FAQ from './pages/FAQ.jsx'
 import Contact from './pages/Contact.jsx'
 import CodeOfConduct from './pages/CodeOfConduct.jsx'
 import Migration from './pages/Migration.jsx'
+import BookAppointment from './pages/BookAppointment.jsx'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -20,9 +21,6 @@ function ScrollTop() {
 }
 
 export default function App() {
-  useEffect(() => {
-    document.title = 'Anand Education | Migration'
-  }, [])
   return (
     <>
       <ScrollTop />
@@ -36,6 +34,7 @@ export default function App() {
           <Route path="/partners" element={<Partners />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/migration" element={<Migration />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/code-of-conduct" element={<CodeOfConduct />} />
           <Route path="*" element={<Navigate to="/" replace />} />

@@ -2,12 +2,13 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import ContactForm from '../components/ContactForm.jsx'
 import LandlineIcon from '../components/LandlineIcon.jsx'
-import { Smartphone } from 'lucide-react'
+import { PageSeo } from '../components/Seo.jsx'
 import { site } from '../data.js'
 
 export default function Contact() {
   return (
     <>
+      <PageSeo path="/contact" />
       <PageHero title="Contact Us" theme="contact" />
       <section className="section">
         <div className="container contact-grid">
@@ -19,7 +20,7 @@ export default function Contact() {
               <article className="office js-hot-section">
                 <img src="/assets/images/bg-contact.jpg" alt="Australia office" />
                 <div className="office-body">
-                  <h3 className="serif hot-info">Anand Education | Migration – Australia Office</h3>
+                  <h3 className="serif hot-info">Anand Education & Migration – Australia Office</h3>
                   <dl className="office-list">
                     <div>
                       <dt>Address</dt>
@@ -35,15 +36,6 @@ export default function Contact() {
                         <a className="office-line" href={site.phoneHref}>
                           <LandlineIcon size={16} />
                           <span>{site.phone}</span>
-                        </a>
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>Phone</dt>
-                      <dd>
-                        <a className="office-line" href={site.mobileHref}>
-                          <Smartphone size={16} />
-                          <span>{site.mobile}</span>
                         </a>
                       </dd>
                     </div>

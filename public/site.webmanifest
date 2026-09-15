@@ -1,0 +1,24 @@
+{
+  "name": "Anand Education & Migration",
+  "short_name": "AES",
+  "description": "Visa and education consultation for Australian student, work, PR and citizenship pathways. MARN 2619232.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4efe6",
+  "theme_color": "#0b1f3a",
+  "lang": "en-AU",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

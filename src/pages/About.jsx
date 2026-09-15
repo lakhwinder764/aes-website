@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal.jsx'
 import Counters from '../components/Counters.jsx'
 import Testimonials from '../components/Testimonials.jsx'
 import WorldMap from '../components/WorldMap.jsx'
+import { PageSeo } from '../components/Seo.jsx'
 import { history } from '../data.js'
 
 export default function About() {
@@ -12,6 +13,7 @@ export default function About() {
 
   return (
     <>
+      <PageSeo path="/about" />
       <PageHero title="About" theme="about" />
       <section className="section">
         <div className="container split">
@@ -35,7 +37,7 @@ export default function About() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal>
-            <h2 className="section-title">Anand Education | Migration Carries Awesome History</h2>
+            <h2 className="section-title">Anand Education & Migration Carries Awesome History</h2>
             <div className="tabs">
               {history.map((h, i) => (
                 <button key={h.tab} className={i === tab ? 'on' : ''} onClick={() => setTab(i)}>{h.tab}</button>
@@ -59,7 +61,7 @@ export default function About() {
             <p className="eyebrow">Our Missions</p>
             <h2 className="section-title">We Journey The Global Business to Ensuring The Guarantee</h2>
             <p className="lead">
-              For over many years, Anand Education | Migration has helped students, professionals, tourists, and people with medical needs navigate the Australian education and immigration system. Our mission is <strong>reliable, transparent, and personalised support</strong>, so every client can move forward with confidence.
+              For over many years, Anand Education & Migration has helped students, professionals, tourists, and people with medical needs navigate the Australian education and immigration system. Our mission is <strong>reliable, transparent, and personalised support</strong>, so every client can move forward with confidence.
             </p>
           </Reveal>
           <Reveal>

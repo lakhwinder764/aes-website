@@ -19,6 +19,20 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; cursor: default; }
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 10000;
+  background: #0b1f3a;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.skip-link:focus {
+  top: 12px;
+}
 body {
   cursor: default;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -1103,7 +1117,11 @@ strong, b { color: var(--navy); font-weight: 800; }
   color: var(--navy);
   letter-spacing: .04em;
 }
-.form input, .form textarea {
+.form label .req {
+  color: #c2410c;
+  margin-left: 3px;
+}
+.form input, .form textarea, .form select {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -1113,7 +1131,15 @@ strong, b { color: var(--navy); font-weight: 800; }
   font-size: 1rem;
   font-weight: 550;
 }
+.form select { appearance: auto; }
 .form textarea { min-height: 140px; resize: vertical; }
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.form-row > div { display: grid; gap: 12px; }
+.form-error { color: #9b1c1c; font-weight: 650; margin: 0; }
 .office {
   background: linear-gradient(160deg, #071628, #16345f);
   color: #fff;
@@ -1628,7 +1654,7 @@ a[href*="maps"]:hover,
   .header.over-hero:not(.solid) .nav-links a,
   .header.over-hero:not(.solid) .drop-btn { color: var(--navy); }
   .dropdown-menu { position: static; display: block; box-shadow: none; padding: 0 0 0 10px; background: none; }
-  .service-grid, .highlights, .quick-visas, .blog-grid, .process, .footer-grid, .partner-grid, .docs, .details-grid, .stats {
+  .service-grid, .highlights, .quick-visas, .blog-grid, .process, .footer-grid, .partner-grid, .docs, .details-grid, .stats, .contact-grid, .form-row {
     grid-template-columns: 1fr;
   }
   .cta-band { flex-direction: column; align-items: flex-start; }

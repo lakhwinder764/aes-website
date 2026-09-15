@@ -79,7 +79,7 @@ const PACKS = {
     { src: '/assets/images/art-conduct.jpg', to: '/code-of-conduct', label: 'Conduct', Icon: ShieldCheck },
   ],
   migration: [
-    { src: '/assets/images/migration-agent-3d.jpg', to: '/contact', label: 'Consult', Icon: Phone },
+    { src: '/assets/images/migration-agent-3d.jpg', to: '/book-appointment', label: 'Book', Icon: Phone },
     { src: '/assets/images/art-migration.jpg', to: '/services/permanent-residency', label: 'PR', Icon: Landmark },
     { src: '/assets/images/bg-home-sydney.jpg', to: '/services/work-visa', label: 'Work', Icon: Briefcase },
     { src: '/assets/images/bg-page-office.jpg', to: '/code-of-conduct', label: 'Conduct', Icon: Scale },

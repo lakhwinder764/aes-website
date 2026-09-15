@@ -30,6 +30,7 @@ import Reveal from '../components/Reveal.jsx'
 import ContactForm from '../components/ContactForm.jsx'
 import ServiceMedia from '../components/ServiceMedia.jsx'
 import ProcessFunnel from '../components/ProcessFunnel.jsx'
+import { PageSeo } from '../components/Seo.jsx'
 import { serviceFaqs, services, site } from '../data.js'
 
 function documentIcon(text) {
@@ -78,6 +79,7 @@ export default function ServiceDetail() {
 
   return (
     <>
+      <PageSeo path={`/services/${service.slug}`} />
       <PageHero title={service.title} theme={service.theme || 'services'} />
       <section className="section">
         <div className="container split">
@@ -90,7 +92,7 @@ export default function ServiceDetail() {
               </p>
             ))}
             {service.banner ? (
-              <img className="section-photo" src={service.banner} alt="" style={{ marginTop: 18, height: 220 }} />
+              <img className="section-photo" src={service.banner} alt={`${service.title} in Australia`} style={{ marginTop: 18, height: 220 }} />
             ) : null}
           </Reveal>
           <Reveal>
@@ -145,7 +147,7 @@ export default function ServiceDetail() {
               })}
             </div>
             <p className="facts-call">
-              <strong>Call us:</strong> <a className="link" href={site.mobileHref}>{site.mobile}</a>
+              <strong>Call us:</strong> <a className="link" href={site.phoneHref}>{site.phone}</a>
             </p>
           </Reveal>
         </div>

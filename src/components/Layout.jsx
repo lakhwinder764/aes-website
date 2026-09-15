@@ -14,11 +14,13 @@ export default function Layout() {
 
   return (
     <>
+      <a className="skip-link" href="#main-content">Skip to content</a>
       <DepthField />
       <Navbar overHero={overHero} />
       <VisitEffects path={pathname} />
       <AnimatePresence mode="wait">
         <motion.main
+          id="main-content"
           key={pathname}
           initial={{ opacity: 0, y: 28, rotateX: 8 }}
           animate={{ opacity: 1, y: 0, rotateX: 0 }}
@@ -32,7 +34,7 @@ export default function Layout() {
       <Footer />
       <ScrollProgress />
       <div className="float-actions">
-        <a className="call" href={site.mobileHref} aria-label="Call AES">
+        <a className="call" href={site.phoneHref} aria-label="Call AES">
           <Phone size={20} />
         </a>
         <a className="wa" href="https://wa.me/61435266220" target="_blank" rel="noreferrer" aria-label="WhatsApp">

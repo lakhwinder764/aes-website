@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import ContactForm from '../components/ContactForm.jsx'
+import { PageSeo } from '../components/Seo.jsx'
 import { faqs } from '../data.js'
 
 export default function FAQ() {
@@ -11,6 +12,7 @@ export default function FAQ() {
 
   return (
     <>
+      <PageSeo path="/faq" />
       <PageHero title="FAQ" theme="faq" />
       <section className="section">
         <div className="container split">

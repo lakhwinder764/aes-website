@@ -40,7 +40,7 @@ export default function Navbar({ overHero }) {
       <div className="nav-shell">
         <div className="container nav">
           <Link to="/" onClick={() => setOpen(false)}>
-            <img className="logo" src="/assets/logo.png" alt="Anand Education | Migration" />
+            <img className="logo" src="/assets/logo.png" alt="Anand Education & Migration" />
           </Link>
           <button className="menu-toggle" onClick={() => setOpen((v) => !v)} aria-label="Menu">
             {open ? <X /> : <Menu />}
@@ -57,6 +57,7 @@ export default function Navbar({ overHero }) {
               </div>
             </div>
             <NavLink to="/migration">Migration</NavLink>
+            <NavLink to="/book-appointment">Book Appointment</NavLink>
             <NavLink to="/partners">Partners</NavLink>
             <NavLink to="/faq">FAQ</NavLink>
             <NavLink to="/about">About</NavLink>

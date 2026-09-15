@@ -3,11 +3,13 @@ import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import PartnerMark from '../components/PartnerLogos.jsx'
 import TiltCard from '../components/TiltCard.jsx'
+import { PageSeo } from '../components/Seo.jsx'
 import { partners } from '../data.js'
 
 export default function Partners() {
   return (
     <>
+      <PageSeo path="/partners" />
       <PageHero title="Partners" theme="partners" />
       <section className="section">
         <div className="container center">
@@ -23,7 +25,7 @@ export default function Partners() {
               <Reveal key={p.id} delay={i * 0.06}>
                 <TiltCard>
                   <article className="partner-card">
-                    <img src={p.image} alt="" />
+                    <img src={p.image} alt={p.name} />
                     <PartnerMark id={p.id} />
                     <p style={{ marginTop: 12, fontWeight: 700, color: 'var(--navy)', padding: '0 16px', textAlign: 'center' }}>{p.name}</p>
                   </article>

@@ -8,6 +8,8 @@ export default function ServiceMedia({ service, className = '' }) {
         loop
         playsInline
         poster={service.image}
+        title={service.title}
+        aria-label={service.title}
       >
         <source src={service.video} type="video/mp4" />
       </video>
