@@ -480,11 +480,11 @@ export const serviceHighlights = [
 
 export const migration = {
   agent: {
-    name: 'Rahul Sharma',
-    role: 'Registered Migration Agent (Dummy Profile)',
-    marn: 'MARN 0000000 (Sample)',
-    photo: '/assets/images/migration-agent-3d.jpg',
-    bio: 'This is placeholder content for the AES migration desk. Rahul Sharma is a sample registered migration agent profile used to show how client consultations, visa pathway advice, and file preparation will appear on the website.',
+    name: 'Princy Aghi',
+    role: 'Registered Migration Agent',
+    marn: 'MARN 2619232',
+    photo: '/assets/images/migration-agent.jpg',
+    bio: 'Princy Aghi is a registered migration agent (MARN 2619232). She advises clients on study, skilled work, partner, and permanent residency pathways to Australia, with consultations from Blacktown and Karnal.',
   },
   intro:
     'AES Migration (sample copy) helps individuals and families plan study, skilled work, partner, and permanent residency pathways to Australia. All text on this page is dummy content for layout and review.',

@@ -557,13 +557,12 @@ strong, b { color: var(--navy); font-weight: 800; }
 }
 .agent-card img {
   width: 100%;
-  height: auto;
-  max-height: none;
+  height: 460px;
   display: block;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: top center;
   border-radius: 28px 28px 0 0;
-  background: #0b1a2e;
+  background: #ece8e2;
 }
 .agent-card > div { padding: 22px 24px 26px; }
 .agent-card h3 {

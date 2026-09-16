@@ -15,7 +15,7 @@ export default function Migration() {
         <div className="container split">
           <Reveal>
             <p className="eyebrow">AES Migration Desk</p>
-            <h2 className="section-title">Registered Migration Support (Sample Page)</h2>
+            <h2 className="section-title">Registered Migration Support</h2>
             <p className="lead">{migration.intro}</p>
             <p className="lead" style={{ marginTop: 14 }}>{migration.agent.bio}</p>
             <Link className="btn btn-copper" to="/book-appointment" style={{ marginTop: 22 }}>Book an Appointment</Link>
