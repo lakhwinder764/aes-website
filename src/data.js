@@ -1,14 +1,19 @@
 export const site = {
-  name: 'Anand Education & Migration',
-  short: 'AES',
+  name: 'Anand Education and Migration Services',
+  short: 'Anand Education and Migration Services',
   tagline: 'Visa & Education Consultation',
   url: 'https://anandeducationservices.com',
   ogImage: '/assets/images/bg-home-sydney.jpg',
   hours: 'Mon to Fri — 10:00 AM to 6:00 PM , Sat & Sun — Closed',
   phone: '02 8609 3786',
   phoneHref: 'tel:0286093786',
+  phoneLabel: 'Landline',
   mobile: '0435 266 220',
   mobileHref: 'tel:0435266220',
+  mobileLabel: 'Mobile',
+  smsHref: 'sms:0435266220',
+  acknowledgment:
+    'Anand Education and Migration Services acknowledges that immigration assistance is provided by Princy Aghi, a registered migration agent (MARN 2619232). Information on this website is general in nature and does not replace advice about your own circumstances.',
   email: 'info@anandmigrationservices.com',
   marn: 'MARN 2619232',
   australia: {
@@ -53,11 +58,11 @@ export const services = [
     image: '/assets/images/service-student-3d.jpg',
     banner: '/assets/images/art-student.jpg',
     excerpt:
-      'Students applying for an Australian student visa should submit their application online through the official…',
+      'Students applying for an Australian student visa should submit their application online through the official Department of Home Affairs portal.',
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Students applying for an Australian student visa should submit their application online through the official Department of Home Affairs portal. If you’re unsure where to apply or how to begin, our team at Anand Education & Migration is here to assist you every step of the way.',
+      'Students applying for an Australian student visa should submit their application online through the official Department of Home Affairs portal. If you’re unsure where to apply or how to begin, our team at Anand Education and Migration Services is here to assist you every step of the way.',
       'Applicants may be accompanied by one person (like a parent or guardian) during consultations if needed. All applications must follow the official Australian Government guidelines.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -96,11 +101,11 @@ export const services = [
       { label: 'Total Charges', value: 'AUD $1650 (subject to change)' },
     ],
     closing:
-      'Australia is a land of stunning natural beauty, vibrant cities, and world-class education. From its welcoming communities to diverse wildlife and modern lifestyle, it offers a rich experience for international students and visitors alike. At Anand Education & Migration, we’ve proudly assisted students, business professionals, tourists, and individuals with medical needs in making Australia their destination of choice.',
+      'Australia is a land of stunning natural beauty, vibrant cities, and world-class education. From its welcoming communities to diverse wildlife and modern lifestyle, it offers a rich experience for international students and visitors alike. At Anand Education and Migration Services, we’ve proudly assisted students, business professionals, tourists, and individuals with medical needs in making Australia their destination of choice.',
     seo: {
       title: 'Australian Student Visa (Subclass 500) | Anand Education',
       description:
-        'Student visa Australia guidance for Subclass 500: eligibility, CoE, OSHC, English tests, GTE, documents, processing times, and lodging with Anand Education & Migration (MARN 2619232).',
+        'Student visa Australia guidance for Subclass 500: eligibility, CoE, OSHC, English tests, GTE, documents, processing times, and lodging with Anand Education and Migration Services (MARN 2619232).',
       keywords:
         'student visa Australia, subclass 500, CoE, OSHC, GTE, IELTS, PTE, study in Australia, Anand Education Blacktown',
     },
@@ -113,11 +118,11 @@ export const services = [
     image: '/assets/images/service-work-3d.jpg',
     banner: '/assets/images/art-work.jpg',
     excerpt:
-      'Applicants seeking for work permit (Temporary Skill in demand visa - Subclass 482) or other skilled…',
+      'Applicants seeking a work permit, including the Temporary Skill Shortage visa (Subclass 482) and other skilled visas, apply through the Department of Home Affairs.',
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Applicants seeking for work permit (Temporary Skill in demand visa – Subclass 482) or other skilled work visas in Australia should apply through the Department of Home Affairs. It’s essential to submit your application online or through an authorized representative in your region. If you’re unsure where to apply or need clarification, our team at Anand Education & Migration is here to help guide you.',
+      'Applicants seeking for work permit (Temporary Skill in demand visa – Subclass 482) or other skilled work visas in Australia should apply through the Department of Home Affairs. It’s essential to submit your application online or through an authorized representative in your region. If you’re unsure where to apply or need clarification, our team at Anand Education and Migration Services is here to help guide you.',
       'Applicants may receive assistance during the process but must follow all Australian government guidelines regarding documentation, eligibility, and health/security clearances.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -156,11 +161,11 @@ export const services = [
       { label: 'Total Charges', value: 'AUD $2,770+ (may vary depending on the visa subclass)' },
     ],
     closing:
-      'Australia is known for its vibrant cities, stunning natural landscapes, and diverse cultural heritage. From world-class education to exciting career opportunities, it offers something for everyone. At Anand Education & Migration, we’ve helped students, business professionals, tourists, and individuals with medical needs successfully navigate their journey to Australia',
+      'Australia is known for its vibrant cities, stunning natural landscapes, and diverse cultural heritage. From world-class education to exciting career opportunities, it offers something for everyone. At Anand Education and Migration Services, we’ve helped students, business professionals, tourists, and individuals with medical needs successfully navigate their journey to Australia',
     seo: {
       title: 'Australia Work Visa & Subclass 482 | Anand Education',
       description:
-        'Work visa and Temporary Skill Shortage (Subclass 482) support: skills, job offer, English, health insurance, documents, fees, and application steps with Anand Education & Migration.',
+        'Work visa and Temporary Skill Shortage (Subclass 482) support: skills, job offer, English, health insurance, documents, fees, and application steps with Anand Education and Migration Services.',
       keywords:
         'work visa Australia, subclass 482, TSS visa, skilled work visa, job offer, skills assessment, Anand Education Migration',
     },
@@ -173,11 +178,11 @@ export const services = [
     image: '/assets/images/service-pr-3d.jpg',
     banner: '/assets/images/art-pr.jpg',
     excerpt:
-      'Applicants for Permanent Residency (PR) in Australia must apply online through the Department of Home…',
+      'Applicants for permanent residency in Australia must apply online through the Department of Home Affairs.',
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Applicants for Permanent Residency (PR) in Australia must apply online through the Department of Home Affairs. If you’re unsure where to begin, Anand Education & Migration provides complete support throughout the process — from checking your eligibility to preparing your final submission.',
+      'Applicants for Permanent Residency (PR) in Australia must apply online through the Department of Home Affairs. If you’re unsure where to begin, Anand Education and Migration Services provides complete support throughout the process — from checking your eligibility to preparing your final submission.',
       'Applicants may bring a support person for in-office appointments, limited to one per applicant or group. All applications must comply with Australian immigration rules and procedures.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -215,11 +220,11 @@ export const services = [
       { label: 'Estimated Visa Fee', value: 'AUD $4,640+ (subject to subclass and applicant details)' },
     ],
     closing:
-      'Australia offers a high quality of life, excellent healthcare, strong job opportunities, and a clear pathway to citizenship. With our experience and personalized support, Anand Education & Migration ensures your PR journey is efficient, transparent, and stress-free.',
+      'Australia offers a high quality of life, excellent healthcare, strong job opportunities, and a clear pathway to citizenship. With our experience and personalized support, Anand Education and Migration Services ensures your PR journey is efficient, transparent, and stress-free.',
     seo: {
-      title: 'Australia Permanent Residency (189, 190, 491) | AES',
+      title: 'Australia Permanent Residency (189, 190, 491) | Anand Education and Migration Services',
       description:
-        'Australian PR help for points-tested and sponsored visas (Subclass 189, 190, 491): eligibility, EOI, skills assessment, documents, fees, and timelines with Anand Education & Migration.',
+        'Australian PR help for points-tested and sponsored visas (Subclass 189, 190, 491): eligibility, EOI, skills assessment, documents, fees, and timelines with Anand Education and Migration Services.',
       keywords:
         'permanent residency Australia, PR visa, subclass 189, subclass 190, subclass 491, EOI, skilled migration, Anand Education',
     },
@@ -232,11 +237,11 @@ export const services = [
     image: '/assets/images/service-citizenship-3d.jpg',
     banner: '/assets/images/art-citizenship.jpg',
     excerpt:
-      'Applicants for Australian citizenship must apply through the Department of Home Affairs online portal. The…',
+      'Applicants for Australian citizenship must apply through the Department of Home Affairs online portal.',
     eyebrow: 'Higher Study',
     heading: 'In Australia',
     intro: [
-      'Applicants for Australian citizenship must apply through the Department of Home Affairs online portal. The application should be submitted based on your current place of residence, and if you’re unsure where to begin, Anand Education & Migration is here to assist at every stage.',
+      'Applicants for Australian citizenship must apply through the Department of Home Affairs online portal. The application should be submitted based on your current place of residence, and if you’re unsure where to begin, Anand Education and Migration Services is here to assist at every stage.',
       'While you’re allowed to bring one support person to appointments if required, all applications and interviews must strictly follow Australian Government procedures.',
     ],
     processTitle: 'Visa Application Whole Process',
@@ -273,11 +278,11 @@ export const services = [
       { label: 'Final Steps', value: 'Attend the Australian citizenship ceremony' },
     ],
     closing:
-      'Becoming an Australian citizen is a proud milestone. With over a decade of experience, Anand Education & Migration provides trusted support to make your citizenship journey smooth, clear, and successful.',
+      'Becoming an Australian citizen is a proud milestone. With over a decade of experience, Anand Education and Migration Services provides trusted support to make your citizenship journey smooth, clear, and successful.',
     seo: {
       title: 'Australian Citizenship Application | Anand Education',
       description:
-        'Australian citizenship applications: residency time, character and language requirements, documents, interview and test, ceremony, and fees with Anand Education & Migration in Blacktown.',
+        'Australian citizenship applications: residency time, character and language requirements, documents, interview and test, ceremony, and fees with Anand Education and Migration Services in Blacktown.',
       keywords:
         'Australian citizenship, citizenship application, Form 1300t, citizenship test, permanent resident, Anand Education Migration',
     },
@@ -361,11 +366,11 @@ export const faqs = {
 export const testimonials = [
   {
     name: 'Kafi Narwal',
-    text: "I'm so happy to finally receive my student visa for higher education after a long wait! While the processing time was longer due to the Australian government’s timeline,Anand Education & Migration supported me throughout the journey. They guided me through every step, kept me informed, and provided reassurance during the waiting period. I truly appreciate their professionalism and dedication. Highly recommend their service to anyone applying for a visa.",
+    text: "I'm so happy to finally receive my student visa for higher education after a long wait! While the processing time was longer due to the Australian government’s timeline,Anand Education and Migration Services supported me throughout the journey. They guided me through every step, kept me informed, and provided reassurance during the waiting period. I truly appreciate their professionalism and dedication. Highly recommend their service to anyone applying for a visa.",
   },
   {
     name: 'Mandeep Kaur',
-    text: 'I had a great experience with Anand Education & Migration. Their service was excellent, and the filing process was smooth, transparent, and fast. They made everything easy and stress-free. Highly recommended!',
+    text: 'I had a great experience with Anand Education and Migration Services. Their service was excellent, and the filing process was smooth, transparent, and fast. They made everything easy and stress-free. Highly recommended!',
   },
   {
     name: 'Madhu Kamboj',
@@ -391,21 +396,21 @@ export const blogs = [
     slug: 'student-visa-checklist',
     date: 'Aug 12, 2026',
     title: 'Student Visa Checklist Before You Lodge',
-    excerpt: 'CoE, OSHC, English scores and GTE notes — what AES checks before you apply…',
+    excerpt: 'CoE, OSHC, English scores and GTE notes — what Anand Education and Migration Services checks before you apply.',
     image: '/assets/images/blog-3d-1.jpg',
     seo: {
-      title: 'Student Visa Checklist Before You Lodge | AES',
-      description: 'CoE, OSHC, English scores and GTE notes — what Anand Education & Migration checks before you lodge an Australian student visa.',
+      title: 'Student Visa Checklist Before You Lodge | Anand Education and Migration Services',
+      description: 'CoE, OSHC, English scores and GTE notes — what Anand Education and Migration Services checks before you lodge an Australian student visa.',
     },
   },
   {
     slug: 'skilled-work-pathways',
     date: 'Jul 28, 2026',
     title: 'Skilled Work Pathways For Australia',
-    excerpt: 'How job offers, skills assessments and English tests fit a 482 or skilled visa…',
+    excerpt: 'How job offers, skills assessments and English tests fit a 482 or skilled visa.',
     image: '/assets/images/blog-3d-2.jpg',
     seo: {
-      title: 'Skilled Work Pathways For Australia | AES',
+      title: 'Skilled Work Pathways For Australia | Anand Education and Migration Services',
       description: 'How job offers, skills assessments and English tests fit an Australian Subclass 482 or skilled work visa pathway.',
     },
   },
@@ -413,11 +418,11 @@ export const blogs = [
     slug: 'pr-to-citizenship',
     date: 'Jun 04, 2026',
     title: 'From Permanent Residency To Citizenship',
-    excerpt: 'Residence time, character checks and ceremony steps explained in plain language…',
+    excerpt: 'Residence time, character checks and ceremony steps explained in plain language.',
     image: '/assets/images/blog-3d-3.jpg',
     seo: {
-      title: 'From Permanent Residency To Citizenship | AES',
-      description: 'Residence time, character checks and Australian citizenship ceremony steps explained in plain language by Anand Education & Migration.',
+      title: 'From Permanent Residency To Citizenship | Anand Education and Migration Services',
+      description: 'Residence time, character checks and Australian citizenship ceremony steps explained in plain language by Anand Education and Migration Services.',
     },
   },
 ]
@@ -425,9 +430,9 @@ export const blogs = [
 export const history = [
   {
     tab: 'Foundation',
-    title: 'Anand Education & Migration Was Founded',
+    title: 'Anand Education and Migration Services Was Founded',
     text: 'We began our journey with a vision to provide trusted education and visa guidance to students aspiring to study and settle in Australia.',
-    image: '/assets/images/about-consult-3d.jpg',
+    image: '/assets/images/bg-page-office.jpg',
   },
   {
     tab: 'Recognition',
@@ -464,12 +469,7 @@ export const serviceHighlights = [
   {
     title: 'Advice & Consultancy',
     text: 'Navigate your career abroad with guidance on securing work permits in higher education.',
-    image: '/assets/images/about-consult-3d.jpg',
-  },
-  {
-    title: 'Tour & Travel Guidelines',
-    text: 'Explore overseas opportunities with travel advice and work permit tips for academic professionals.',
-    image: '/assets/images/bg-home-travel.jpg',
+    image: '/assets/images/bg-page-office.jpg',
   },
   {
     title: 'Education Tips and Tricks',
@@ -483,22 +483,24 @@ export const migration = {
     name: 'Princy Aghi',
     role: 'Registered Migration Agent',
     marn: 'MARN 2619232',
-    photo: '/assets/images/migration-agent.jpg',
+    photo: '/assets/images/migration-agent-alt.jpg',
     bio: 'Princy Aghi is a registered migration agent (MARN 2619232). She advises clients on study, skilled work, partner, and permanent residency pathways to Australia, with consultations from Blacktown and Karnal.',
   },
+  hero:
+    'Professional migration guidance to help you understand your options and take the next step towards your future in Australia.',
   intro:
-    'AES Migration (sample copy) helps individuals and families plan study, skilled work, partner, and permanent residency pathways to Australia. All text on this page is dummy content for layout and review.',
+    'At Anand Education & Migration, we provide professional guidance for individuals and families exploring migration pathways to Australia. We take the time to understand your circumstances, explain the available options and help you prepare for the next stage of your migration journey.',
   highlights: [
-    { title: 'Visa Pathway Review', text: 'Dummy note: we map your profile to student, skilled, partner, or PR options before any filing starts.', image: '/assets/images/art-migration.jpg' },
-    { title: 'Document Checklist', text: 'Dummy note: identity, skills assessment, English tests, and financial evidence are organised into a clear list.', image: '/assets/images/art-faq.jpg' },
-    { title: 'Application Support', text: 'Dummy note: forms, uploads, and follow-ups are prepared with your registered agent for review.', image: '/assets/images/bg-page-office.jpg' },
-    { title: 'After-Visa Guidance', text: 'Dummy note: arrival, COE, work conditions, and next-step visas are explained in plain language.', image: '/assets/images/bg-home-sydney.jpg' },
+    { title: 'Visa Pathway Review', text: 'Understand the migration pathways that may be relevant to your circumstances, including study, work and permanent residency options.', image: '/assets/images/art-migration.jpg' },
+    { title: 'Document Checklist', text: 'Understand the documents and supporting evidence required for your application and prepare them in an organised manner.', image: '/assets/images/art-faq.jpg' },
+    { title: 'Application Support', text: 'Get guidance with preparing the required forms, documents and information for your migration application.', image: '/assets/images/bg-page-office.jpg' },
+    { title: 'After-Visa Guidance', text: 'Understand the next steps after your visa application, including important information relevant to your study, work or future plans in Australia.', image: '/assets/images/bg-home-sydney.jpg' },
   ],
   steps: [
-    { title: 'Free profile discussion', text: 'Sample step: share your goals, occupation, and timeline in a 20-minute consult.' },
-    { title: 'Eligibility snapshot', text: 'Sample step: receive a dummy points/pathway summary for study or skilled migration.' },
-    { title: 'File preparation', text: 'Sample step: collect documents and complete draft forms with agent support.' },
-    { title: 'Lodge & track', text: 'Sample step: submit through the official portal and monitor updates together.' },
+    { title: 'Consultation', text: 'Discuss your background, circumstances and plans for Australia.' },
+    { title: 'Pathway Assessment', text: 'Understand the migration options that may be relevant to your situation.' },
+    { title: 'File Preparation', text: 'Once your migration pathway has been identified, we help you organise the required documents and information so your application can be prepared clearly and accurately.' },
+    { title: 'Lodge & Track', text: 'Complete the application process and stay informed about the progress of your application.' },
   ],
 }
 

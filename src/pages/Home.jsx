@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, ArrowUpRight, Briefcase, FileCheck, GraduationCap, Landmark } from 'lucide-react'
+import { ArrowUpRight, Briefcase, FileCheck, GraduationCap, Landmark } from 'lucide-react'
 import Reveal from '../components/Reveal.jsx'
 import Counters from '../components/Counters.jsx'
 import Testimonials from '../components/Testimonials.jsx'
@@ -8,39 +8,40 @@ import TiltCard from '../components/TiltCard.jsx'
 import PartnerMark from '../components/PartnerLogos.jsx'
 import WorldMap from '../components/WorldMap.jsx'
 import ServiceMedia from '../components/ServiceMedia.jsx'
-import SceneChips from '../components/SceneChips.jsx'
 import { PageSeo } from '../components/Seo.jsx'
-import { blogs, partners, services, migration } from '../data.js'
-
-const slides = [
-  { type: 'image', src: '/assets/images/carousel-student.jpg' },
-  { type: 'image', src: '/assets/images/carousel-work.jpg' },
-  { type: 'image', src: '/assets/images/carousel-pr.jpg' },
-  { type: 'image', src: '/assets/images/carousel-citizenship.jpg' },
-  { type: 'image', src: '/assets/images/bg-home-sydney.jpg' },
-]
+import { partners, services, migration, site } from '../data.js'
 
 const visaIcons = [GraduationCap, Briefcase, Landmark, FileCheck]
 
+const slides = [
+  '/assets/images/carousel-student.jpg',
+  '/assets/images/carousel-work.jpg',
+  '/assets/images/carousel-pr.jpg',
+  '/assets/images/carousel-citizenship.jpg',
+  '/assets/images/bg-home-sydney.jpg',
+]
+
 export default function Home() {
   const [slide, setSlide] = useState(0)
-  const total = slides.length
 
   useEffect(() => {
-    const id = setInterval(() => setSlide((s) => (s + 1) % total), 6500)
+    const id = setInterval(() => setSlide((current) => (current + 1) % slides.length), 6500)
     return () => clearInterval(id)
-  }, [slide, total])
-
-  const prev = () => setSlide((s) => (s - 1 + total) % total)
-  const next = () => setSlide((s) => (s + 1) % total)
+  }, [])
 
   return (
     <>
       <PageSeo path="/" />
       <section className="hero">
-        <img className="hero-bg-img" src={slides[slide].src} alt="Anand Education & Migration visa and education consultation" />
+        {slides.map((src, i) => (
+          <img
+            key={src}
+            className={`hero-bg-img ${i === slide ? 'is-active' : ''}`}
+            src={src}
+            alt=""
+          />
+        ))}
         <div className="overlay" />
-        <SceneChips theme="home" />
         <div className="container hero-copy">
           <p className="hero-chip">Effective Visa Solution</p>
           <h1>
@@ -49,16 +50,12 @@ export default function Home() {
             <span>Consultation</span>
           </h1>
           <p>
-            Our <strong>professionalism, honesty, sincerity</strong> and dedication to client service has helped our clients to fulfill their wishes
+            Our <strong>professionalism, honesty, sincerity</strong> and dedication to client service has helped our clients to fulfill their wishes.
           </p>
           <div className="hero-actions">
             <Link className="btn btn-copper" to="/contact">Book Now</Link>
             <Link className="btn btn-ghost" to="/services">Explore Services</Link>
           </div>
-        </div>
-        <div className="hero-nav">
-          <button type="button" onClick={prev} aria-label="Previous"><ArrowLeft size={18} /></button>
-          <button type="button" onClick={next} aria-label="Next"><ArrowRight size={18} /></button>
         </div>
       </section>
 
@@ -115,7 +112,7 @@ export default function Home() {
             </TiltCard>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="eyebrow">AES Migration</p>
+            <p className="eyebrow">{site.name}</p>
             <h2 className="section-title">Migration Details</h2>
             <p className="lead">{migration.intro}</p>
             <div className="highlights two-col" style={{ marginTop: 22 }}>
@@ -150,19 +147,19 @@ export default function Home() {
       <section className="section" style={{ paddingTop: 20 }}>
         <div className="container split">
           <Reveal>
-            <p className="eyebrow">About AES</p>
+            <p className="eyebrow">About {site.name}</p>
             <h2 className="section-title">Many Years of Your Trust and Recommendation</h2>
             <p className="lead">
               For over many years, our experienced consultants help people <strong>study, work, visit, or settle in Australia</strong>. We specialise in <strong>student visas</strong>, <strong>skilled migration</strong>, visitor visas, family reunification, and business or investment-based immigration.
             </p>
             <p className="lead" style={{ marginTop: 14 }}>
-              With deep knowledge of <strong>Australian immigration policies</strong> and strong ties with reputed Australian institutions, we offer personalised guidance every step of the way. Whether you want to study at a top university, reunite with family, or build a future in Australia, <strong>AES</strong> is here to make the journey smooth and successful.
+              With deep knowledge of <strong>Australian immigration policies</strong> and strong ties with reputed Australian institutions, we offer personalised guidance every step of the way. Whether you want to study at a top university, reunite with family, or build a future in Australia, <strong>{site.name}</strong> is here to make the journey smooth and successful.
             </p>
             <Link className="btn btn-navy" to="/about" style={{ marginTop: 22 }}>Read More</Link>
           </Reveal>
           <Reveal delay={0.15}>
             <div className="photo-stack">
-              <img className="photo-main" src="/assets/images/about-consult-3d.jpg" alt="AES consultation" />
+              <img className="photo-main" src="/assets/images/bg-page-office.jpg" alt="Consultation office" />
               <img className="photo-mid" src="/assets/images/about-students-3d.jpg" alt="Students" />
               <img className="photo-small" src="/assets/images/about-city-3d.jpg" alt="Australia" />
               <img className="stamp" src="/assets/images/float-stamp-3d.png" alt="" />
@@ -179,7 +176,7 @@ export default function Home() {
           <Reveal>
             <h2 className="section-title">Study. Migrate. Succeed.</h2>
             <p className="lead">
-              At <strong>Anand Education & Migration</strong>, we do more than paperwork — we guide dreams. Whether you are pursuing <strong>education</strong>, seeking <strong>permanent residency</strong>, or looking for the right university match, we support you from counselling to visa filing, career planning, and scholarship guidance.
+              At <strong>{site.name}</strong>, we do more than paperwork — we guide dreams. Whether you are pursuing <strong>education</strong>, seeking <strong>permanent residency</strong>, or looking for the right university match, we support you from counselling to visa filing, career planning, and scholarship guidance.
             </p>
             <Link className="btn btn-copper" to="/partners" style={{ marginTop: 18 }}>More Agencies</Link>
           </Reveal>
@@ -231,30 +228,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" style={{ paddingTop: 10 }}>
-        <div className="container">
-          <Reveal className="center">
-            <p className="eyebrow">Recent Blog</p>
-            <h2 className="section-title">Recent Updates of Visa<br />And Immigration</h2>
-          </Reveal>
-          <div className="blog-grid">
-            {blogs.map((b, i) => (
-              <Reveal key={b.slug} delay={i * 0.08}>
-                <TiltCard>
-                <article className="blog-card">
-                  <img src={b.image} alt={b.title} />
-                  <div className="body">
-                    <small>{b.date}</small>
-                    <h3 className="serif" style={{ fontSize: '1.5rem', color: 'var(--navy)', margin: '8px 0' }}>{b.title}</h3>
-                    <p>{b.excerpt}</p>
-                  </div>
-                </article>
-                </TiltCard>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   )
 }

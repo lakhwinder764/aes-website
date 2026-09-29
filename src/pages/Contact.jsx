@@ -1,6 +1,7 @@
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
 import ContactForm from '../components/ContactForm.jsx'
+import { Smartphone } from 'lucide-react'
 import LandlineIcon from '../components/LandlineIcon.jsx'
 import { PageSeo } from '../components/Seo.jsx'
 import { site } from '../data.js'
@@ -20,7 +21,7 @@ export default function Contact() {
               <article className="office js-hot-section">
                 <img src="/assets/images/bg-contact.jpg" alt="Australia office" />
                 <div className="office-body">
-                  <h3 className="serif hot-info">Anand Education & Migration – Australia Office</h3>
+                  <h3 className="serif hot-info">{site.name} – Australia Office</h3>
                   <dl className="office-list">
                     <div>
                       <dt>Address</dt>
@@ -36,6 +37,15 @@ export default function Contact() {
                         <a className="office-line" href={site.phoneHref}>
                           <LandlineIcon size={16} />
                           <span>{site.phone}</span>
+                        </a>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Mobile</dt>
+                      <dd>
+                        <a className="office-line" href={site.mobileHref}>
+                          <Smartphone size={16} />
+                          <span>{site.mobile}</span>
                         </a>
                       </dd>
                     </div>
@@ -67,7 +77,7 @@ export default function Contact() {
             </Reveal>
             <iframe
               className="map-frame"
-              title="AES Blacktown office"
+              title="Anand Education and Migration Services Blacktown office"
               src="https://maps.google.com/maps?q=Unit%202/34-36%20Flushcombe%20Road,%20Blacktown,%20NSW%202148&t=&z=15&ie=UTF8&iwloc=&output=embed"
               allowFullScreen
               loading="lazy"

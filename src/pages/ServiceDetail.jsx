@@ -147,7 +147,9 @@ export default function ServiceDetail() {
               })}
             </div>
             <p className="facts-call">
-              <strong>Call us:</strong> <a className="link" href={site.phoneHref}>{site.phone}</a>
+              <strong>Call us:</strong> <a className="link" href={site.phoneHref}>{site.phoneLabel} {site.phone}</a>
+              {' · '}
+              <a className="link" href={site.mobileHref}>{site.mobileLabel} {site.mobile}</a>
             </p>
           </Reveal>
         </div>

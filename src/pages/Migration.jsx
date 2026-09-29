@@ -10,14 +10,18 @@ export default function Migration() {
   return (
     <>
       <PageSeo path="/migration" />
-      <PageHero title="Migration" theme="migration" />
+      <PageHero
+        title="Migration"
+        theme="migration"
+        eyebrow="Anand Education & Migration"
+        description={migration.hero}
+      />
       <section className="section">
         <div className="container split">
           <Reveal>
             <p className="eyebrow">AES Migration Desk</p>
             <h2 className="section-title">Registered Migration Support</h2>
             <p className="lead">{migration.intro}</p>
-            <p className="lead" style={{ marginTop: 14 }}>{migration.agent.bio}</p>
             <Link className="btn btn-copper" to="/book-appointment" style={{ marginTop: 22 }}>Book an Appointment</Link>
           </Reveal>
           <Reveal>
@@ -40,7 +44,7 @@ export default function Migration() {
         <div className="container">
           <Reveal>
             <p className="eyebrow">What We Cover</p>
-            <h2 className="section-title">Dummy Migration Details</h2>
+            <h2 className="section-title">Migration Services</h2>
           </Reveal>
           <div className="highlights" style={{ marginTop: 28 }}>
             {migration.highlights.map((item, i) => (
@@ -59,7 +63,8 @@ export default function Migration() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal>
-            <h2 className="section-title">Sample Process</h2>
+            <p className="eyebrow">Our Process</p>
+            <h2 className="section-title">A Simple Step-by-Step Approach</h2>
           </Reveal>
           <Reveal>
             <ProcessFunnel steps={migration.steps} />

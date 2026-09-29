@@ -19,10 +19,10 @@ export default function Services() {
             <p className="eyebrow">Featured Services</p>
             <h2 className="section-title">We Take the Challenge to Make Life Easier</h2>
             <p className="lead">
-              For over many years, <strong>Anand Education & Migration</strong> has supported students, business professionals, tourists, and people with medical needs with Australian visas and education. We simplify the journey — whether it is <strong>studying in Australia</strong>, reuniting with family, or building a new life through <strong>skilled migration</strong>.
+              For over many years, <strong>Anand Education and Migration Services</strong> has supported students, business professionals, tourists, and people with medical needs with Australian visas and education. We simplify the journey — whether it is <strong>studying in Australia</strong>, reuniting with family, or building a new life through <strong>skilled migration</strong>.
             </p>
           </Reveal>
-          <div className="highlights" style={{ marginTop: 36 }}>
+          <div className="highlights cols-3" style={{ marginTop: 36 }}>
             {serviceHighlights.map((h, i) => (
               <Reveal key={h.title} delay={i * 0.08}>
                 <article className="highlight">
@@ -68,7 +68,7 @@ export default function Services() {
             </p>
           </Reveal>
           <Reveal>
-            <img className="look-3d-media" src="/assets/images/about-consult-3d.jpg" alt="Working process" />
+            <img className="look-3d-media" src="/assets/images/bg-page-office.jpg" alt="Working process" />
           </Reveal>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import PageHero from '../components/PageHero.jsx'
 import Reveal from '../components/Reveal.jsx'
-import TiltCard from '../components/TiltCard.jsx'
 import AppointmentForm from '../components/AppointmentForm.jsx'
+import { Smartphone } from 'lucide-react'
 import LandlineIcon from '../components/LandlineIcon.jsx'
 import { PageSeo } from '../components/Seo.jsx'
 import { migration, site } from '../data.js'
@@ -18,17 +18,14 @@ export default function BookAppointment() {
           </Reveal>
           <div>
             <Reveal>
-              <TiltCard>
-                <article className="agent-card">
-                  <img src={migration.agent.photo} alt={migration.agent.name} />
-                  <div>
-                    <p className="eyebrow">Migration Agent</p>
-                    <h3>{migration.agent.name}</h3>
-                    <p>{migration.agent.role}</p>
-                    <p className="agent-marn">{migration.agent.marn}</p>
-                  </div>
-                </article>
-              </TiltCard>
+              <article className="agent-card agent-card-text">
+                <div>
+                  <p className="eyebrow">Migration Agent</p>
+                  <h3>{migration.agent.name}</h3>
+                  <p>{migration.agent.role}</p>
+                  <p className="agent-marn">{migration.agent.marn}</p>
+                </div>
+              </article>
             </Reveal>
             <Reveal delay={0.08}>
               <article className="office js-hot-section" style={{ marginTop: 16 }}>
@@ -52,6 +49,15 @@ export default function BookAppointment() {
                         <a className="office-line" href={site.phoneHref}>
                           <LandlineIcon size={16} />
                           <span>{site.phone}</span>
+                        </a>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>Mobile</dt>
+                      <dd>
+                        <a className="office-line" href={site.mobileHref}>
+                          <Smartphone size={16} />
+                          <span>{site.mobile}</span>
                         </a>
                       </dd>
                     </div>

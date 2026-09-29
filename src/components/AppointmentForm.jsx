@@ -180,7 +180,7 @@ export default function AppointmentForm() {
       </button>
       {sent && (
         <p className="success">
-          <strong>Thank you.</strong> Your email app will open so we can receive your appointment request.
+          <strong>Thank you.</strong> Your email app should open a message addressed to {site.email}. Send that email and the appointment request will arrive there.
         </p>
       )}
     </form>

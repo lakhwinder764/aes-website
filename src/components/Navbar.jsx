@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { Clock, MapPin, Menu, X } from 'lucide-react'
+import { Clock, MapPin, Menu, Smartphone, X } from 'lucide-react'
 import LandlineIcon from './LandlineIcon.jsx'
 import { site, services } from '../data.js'
 
@@ -32,7 +32,8 @@ export default function Navbar({ overHero }) {
             <a href={site.australia.map} target="_blank" rel="noreferrer">
               <MapPin size={13} /> Our Location
             </a>
-            <a href={site.phoneHref}><LandlineIcon size={13} /> {site.phone}</a>
+            <a href={site.phoneHref}><LandlineIcon size={13} /> {site.phoneLabel} {site.phone}</a>
+            <a href={site.mobileHref}><Smartphone size={13} /> {site.mobileLabel} {site.mobile}</a>
             <Link to="/contact">Apply Now</Link>
           </div>
         </div>
@@ -40,19 +41,18 @@ export default function Navbar({ overHero }) {
       <div className="nav-shell">
         <div className="container nav">
           <Link to="/" onClick={() => setOpen(false)}>
-            <img className="logo" src="/assets/logo.png" alt="Anand Education & Migration" />
+            <img className="logo" src="/assets/logo.png" alt={site.name} />
           </Link>
           <button className="menu-toggle" onClick={() => setOpen((v) => !v)} aria-label="Menu">
             {open ? <X /> : <Menu />}
           </button>
           <nav className={`nav-links ${open ? 'open' : ''}`} onClick={() => setOpen(false)}>
             <NavLink to="/" end>Home</NavLink>
-            <div className="dropdown">
-              <button className="drop-btn" type="button">Services</button>
+            <div className="dropdown" onClick={(e) => e.stopPropagation()}>
+              <NavLink className="drop-btn" to="/services" onClick={() => setOpen(false)}>Services</NavLink>
               <div className="dropdown-menu">
-                <NavLink to="/services">All Services</NavLink>
                 {services.map((s) => (
-                  <NavLink key={s.slug} to={`/services/${s.slug}`}>{s.title}</NavLink>
+                  <NavLink key={s.slug} to={`/services/${s.slug}`} onClick={() => setOpen(false)}>{s.title}</NavLink>
                 ))}
               </div>
             </div>

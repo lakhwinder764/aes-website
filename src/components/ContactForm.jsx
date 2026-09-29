@@ -19,6 +19,9 @@ export default function ContactForm() {
   return (
     <form className="form" onSubmit={onSubmit}>
       <h3 className="serif" style={{ fontSize: '2rem', color: 'var(--navy)' }}>Get in Touch</h3>
+      <p className="lead" style={{ margin: 0, fontSize: '1rem' }}>
+        Your details are emailed to <a href={`mailto:${site.email}`}>{site.email}</a>. Submitting opens your email app with the message ready to send.
+      </p>
       <label htmlFor="enquiry-name">Your name</label>
       <input id="enquiry-name" name="name" required placeholder="Full name" />
       <label htmlFor="enquiry-email">Your email</label>
@@ -28,7 +31,7 @@ export default function ContactForm() {
       <label htmlFor="enquiry-message">Your message</label>
       <textarea id="enquiry-message" name="message" required placeholder="How can we help?" />
       <button className="btn btn-copper" type="submit">Submit Now</button>
-      {sent && <p className="success"><strong>Thank you.</strong> Your email app will open so we can receive your enquiry.</p>}
+      {sent && <p className="success"><strong>Thank you.</strong> Your email app should open a message addressed to {site.email}. Send that email and we will receive your enquiry there.</p>}
     </form>
   )
 }

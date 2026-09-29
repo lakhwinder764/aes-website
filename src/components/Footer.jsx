@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Mail, MapPin } from 'lucide-react'
+import { BadgeCheck, Facebook, Instagram, Mail, MapPin, Smartphone } from 'lucide-react'
 import LandlineIcon from './LandlineIcon.jsx'
 import { services, site } from '../data.js'
 
@@ -8,9 +8,9 @@ export default function Footer() {
     <footer className="footer js-hot-section">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img className="logo footer-logo" src="/assets/logo.png" alt="Anand Education & Migration" />
-          <p className="footer-name hot-info">Anand Education & Migration</p>
-          <p><strong>Effective Visa Solution.</strong> Our professionalism, honesty, sincerity and dedication to client service has helped our clients to fulfill their wishes.</p>
+          <img className="logo footer-logo" src="/assets/logo.png" alt={site.name} />
+          <p className="footer-name hot-info">{site.name}</p>
+          <p>{site.acknowledgment}</p>
           <div className="footer-social">
             <a href={site.social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={18} /></a>
             <a href={site.social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={18} /></a>
@@ -44,7 +44,13 @@ export default function Footer() {
             <li>
               <a className="foot-row hot-info" href={site.phoneHref}>
                 <LandlineIcon size={16} />
-                <span>{site.phone}</span>
+                <span>{site.phoneLabel} {site.phone}</span>
+              </a>
+            </li>
+            <li>
+              <a className="foot-row hot-info" href={site.mobileHref}>
+                <Smartphone size={16} />
+                <span>{site.mobileLabel} {site.mobile}</span>
               </a>
             </li>
             <li>
@@ -54,7 +60,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <p className="foot-marn hot-info">{site.marn}</p>
+              <p className="foot-row foot-marn hot-info">
+                <BadgeCheck size={16} />
+                <span>Registered migration agent<br />{site.marn}</span>
+              </p>
             </li>
             <li>
               <a className="foot-row hot-info" href={site.australia.map} target="_blank" rel="noreferrer">
@@ -73,11 +82,14 @@ export default function Footer() {
       </div>
       <div className="container">
         <p className="ack">
-          Anand Education & Migration acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.
+          {site.name} acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.
         </p>
         <div className="legal">
-          <span>Copyright © 2026 Anand Education & Migration®. All rights reserved.</span>
-          <a className="hot-info" href={site.phoneHref}>Call or SMS {site.phone}</a>
+          <span>Copyright © 2026 {site.name}. All rights reserved.</span>
+          <span className="legal-phones">
+            <a className="hot-info" href={site.phoneHref}>Call {site.phone}</a>
+            <a className="hot-info" href={site.smsHref}>SMS {site.mobile}</a>
+          </span>
         </div>
       </div>
     </footer>

@@ -36,7 +36,7 @@ export function organizationGraph() {
       caption: site.name,
     },
     email: site.email,
-    telephone: [site.phone],
+    telephone: [site.phone, site.mobile],
     description: `${site.name} — ${site.tagline}. Student visas, work visas, permanent residency and citizenship applications in Australia. ${site.marn}.`,
     foundingLocation: {
       '@type': 'Place',
@@ -72,8 +72,8 @@ export function organizationGraph() {
       })),
     },
     department: [
-      localBusinessNode('au', au, site.phone),
-      localBusinessNode('in', inn, site.phone),
+      localBusinessNode('au', au, [site.phone, site.mobile]),
+      localBusinessNode('in', inn, [site.phone, site.mobile]),
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -275,7 +275,7 @@ export function allSeoPages() {
 
 const homeTitle = `${site.name} | Visa & Education Consultation`
 const homeDesc =
-  'Anand Education & Migration helps students, workers and families with Australian student visas, work visas, permanent residency and citizenship. Blacktown NSW and Karnal, India. MARN 2619232.'
+  'Anand Education and Migration Services helps students, workers and families with Australian student visas, work visas, permanent residency and citizenship. Blacktown NSW and Karnal, India. MARN 2619232.'
 
 const pagesByPath = {
   '/': page({
@@ -348,16 +348,16 @@ const pagesByPath = {
   }),
   '/about': page({
     path: '/about',
-    title: 'About Anand Education & Migration',
+    title: 'About Anand Education and Migration Services',
     description:
-      'Learn about Anand Education & Migration: years of Australian education and immigration support for students, professionals and families. Blacktown NSW and Karnal, India. MARN 2619232.',
+      'Learn about Anand Education and Migration Services: years of Australian education and immigration support for students, professionals and families. Blacktown NSW and Karnal, India. MARN 2619232.',
     keywords: 'about Anand Education, AES Blacktown, migration consultants, Australian immigration, education consultancy',
     image: '/assets/images/bg-about.jpg',
     graph: [
       webPageJsonLd({
         path: '/about',
-        title: 'About Anand Education & Migration',
-        description: 'History, mission and client stories from Anand Education & Migration.',
+        title: 'About Anand Education and Migration Services',
+        description: 'History, mission and client stories from Anand Education and Migration Services.',
         type: 'AboutPage',
       }),
       breadcrumbJsonLd([
@@ -370,7 +370,7 @@ const pagesByPath = {
     path: '/services',
     title: 'Australian Visa & Immigration Services',
     description:
-      'Student visa, work visa, permanent residency and citizenship applications with Anand Education & Migration. Process, documents and personalised consultancy in Australia and India.',
+      'Student visa, work visa, permanent residency and citizenship applications with Anand Education and Migration Services. Process, documents and personalised consultancy in Australia and India.',
     keywords: 'visa services Australia, student visa, work visa, PR, citizenship, immigration consultant Blacktown',
     image: '/assets/images/art-services.jpg',
     priority: 0.9,
@@ -379,7 +379,7 @@ const pagesByPath = {
       webPageJsonLd({
         path: '/services',
         title: 'Australian Visa & Immigration Services',
-        description: 'Visa and immigration services from Anand Education & Migration.',
+        description: 'Visa and immigration services from Anand Education and Migration Services.',
         type: 'CollectionPage',
       }),
       breadcrumbJsonLd([
@@ -393,7 +393,7 @@ const pagesByPath = {
     path: '/partners',
     title: 'Partner Universities & Institutions in Australia',
     description:
-      'Anand Education & Migration partners with Trinity Institute, Federation University, Campbell Institute, Chambers School of Business, ANIE and Kings Institute for Australian study pathways.',
+      'Anand Education and Migration Services partners with Trinity Institute, Federation University, Campbell Institute, Chambers School of Business, ANIE and Kings Institute for Australian study pathways.',
     keywords:
       'Australian university partners, Trinity Institute, Federation University, Campbell Institute, ANIE, Kings Institute, AES partners',
     image: '/assets/images/art-partners.jpg',
@@ -401,7 +401,7 @@ const pagesByPath = {
       webPageJsonLd({
         path: '/partners',
         title: 'Partner Universities & Institutions in Australia',
-        description: 'Education partners of Anand Education & Migration.',
+        description: 'Education partners of Anand Education and Migration Services.',
         type: 'CollectionPage',
       }),
       breadcrumbJsonLd([
@@ -423,7 +423,7 @@ const pagesByPath = {
     path: '/faq',
     title: 'Visa & Immigration FAQ',
     description:
-      'Answers on Australian transit, visitor, student, work and PR visas, interviews, VEVO and processing times from Anand Education & Migration.',
+      'Answers on Australian transit, visitor, student, work and PR visas, interviews, VEVO and processing times from Anand Education and Migration Services.',
     keywords: 'Australia visa FAQ, transit visa 771, visitor visa, VEVO, student visa stay, Anand Education FAQ',
     image: '/assets/images/bg-faq.jpg',
     graph: [
@@ -494,7 +494,7 @@ const pagesByPath = {
   }),
   '/contact': page({
     path: '/contact',
-    title: 'Contact Anand Education & Migration',
+    title: 'Contact Anand Education and Migration Services',
     description: `Book a visa consultation in Blacktown NSW (${site.australia.address}) or Karnal, India. Call ${site.phone}. Email ${site.email}. ${site.marn}.`,
     keywords: 'contact Anand Education, visa consultant Blacktown, Karnal office, book consultation, MARN 2619232',
     image: '/assets/images/bg-contact.jpg',
@@ -515,7 +515,7 @@ const pagesByPath = {
     path: '/code-of-conduct',
     title: 'Code of Conduct for Registered Migration Agents',
     description:
-      'Anand Education & Migration follows the official Code of Conduct for registered migration agents. Read or download the PDF. MARN 2619232.',
+      'Anand Education and Migration Services follows the official Code of Conduct for registered migration agents. Read or download the PDF. MARN 2619232.',
     keywords: 'migration agent code of conduct, registered migration agent, MARN, professional standards, Anand Education',
     image: '/assets/images/art-conduct.jpg',
     changefreq: 'yearly',

@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import { heroThemes, site } from '../data.js'
-import SceneChips from './SceneChips.jsx'
 
-export default function PageHero({ title, theme = 'services' }) {
+export default function PageHero({ title, theme = 'services', eyebrow, description }) {
   const pack = heroThemes[theme] || heroThemes.services
 
   return (
@@ -11,7 +10,6 @@ export default function PageHero({ title, theme = 'services' }) {
         <img className="page-hero-bg" src={pack.bg} alt="" />
       ) : null}
       <div className="shade" />
-      <SceneChips theme={theme} />
       <div className="copy">
         <motion.p
           className="eyebrow"
@@ -19,7 +17,7 @@ export default function PageHero({ title, theme = 'services' }) {
           animate={{ opacity: 1, y: 0 }}
           style={{ color: '#e0a85a', justifyContent: 'center' }}
         >
-          <span className="hot-info brand-name">{site.name}</span>
+          <span className="hot-info brand-name">{eyebrow || site.name}</span>
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 28 }}
@@ -28,6 +26,16 @@ export default function PageHero({ title, theme = 'services' }) {
         >
           {title}
         </motion.h1>
+        {description ? (
+          <motion.p
+            className="page-hero-lead"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.22, duration: 0.7 }}
+          >
+            {description}
+          </motion.p>
+        ) : null}
       </div>
     </section>
   )

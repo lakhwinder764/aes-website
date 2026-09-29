@@ -32,13 +32,15 @@ export default function Layout() {
         </motion.main>
       </AnimatePresence>
       <Footer />
-      <ScrollProgress />
       <div className="float-actions">
-        <a className="call" href={site.phoneHref} aria-label="Call AES">
-          <Phone size={20} />
+        <ScrollProgress />
+        <a className="call" href={site.phoneHref} aria-label={`Call ${site.phone}`}>
+          <Phone size={18} />
+          <span>Call {site.phone}</span>
         </a>
-        <a className="wa" href="https://wa.me/61435266220" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-          <MessageCircle size={20} />
+        <a className="sms" href={site.smsHref} aria-label={`SMS ${site.mobile}`}>
+          <MessageCircle size={18} />
+          <span>SMS {site.mobile}</span>
         </a>
       </div>
     </>

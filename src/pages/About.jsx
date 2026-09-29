@@ -18,7 +18,7 @@ export default function About() {
       <section className="section">
         <div className="container split">
           <Reveal>
-            <p className="eyebrow">About AES</p>
+            <p className="eyebrow">About Anand Education and Migration Services</p>
             <h2 className="section-title">Many Years of Your Trust and Recommendation</h2>
             <p className="lead">
               For over many years, our consultants have been a trusted name in <strong>Australian education and immigration</strong> support. We have assisted thousands of students, professionals, tourists, and people with medical needs — from studying at top Australian universities to securing the right <strong>visa pathway</strong>. We are known for <strong>transparency, reliability, and client satisfaction</strong>.
@@ -26,7 +26,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="photo-stack">
-              <img className="photo-main" src="/assets/images/about-consult-3d.jpg" alt="AES consultation" />
+              <img className="photo-main" src="/assets/images/bg-page-office.jpg" alt="Consultation office" />
               <img className="photo-mid" src="/assets/images/about-students-3d.jpg" alt="Students we support" />
               <img className="photo-small" src="/assets/images/about-city-3d.jpg" alt="Life in Australia" />
             </div>
@@ -37,7 +37,7 @@ export default function About() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal>
-            <h2 className="section-title">Anand Education & Migration Carries Awesome History</h2>
+            <h2 className="section-title">Anand Education and Migration Services Carries Awesome History</h2>
             <div className="tabs">
               {history.map((h, i) => (
                 <button key={h.tab} className={i === tab ? 'on' : ''} onClick={() => setTab(i)}>{h.tab}</button>
@@ -61,7 +61,7 @@ export default function About() {
             <p className="eyebrow">Our Missions</p>
             <h2 className="section-title">We Journey The Global Business to Ensuring The Guarantee</h2>
             <p className="lead">
-              For over many years, Anand Education & Migration has helped students, professionals, tourists, and people with medical needs navigate the Australian education and immigration system. Our mission is <strong>reliable, transparent, and personalised support</strong>, so every client can move forward with confidence.
+              For over many years, Anand Education and Migration Services has helped students, professionals, tourists, and people with medical needs navigate the Australian education and immigration system. Our mission is <strong>reliable, transparent, and personalised support</strong>, so every client can move forward with confidence.
             </p>
           </Reveal>
           <Reveal>
