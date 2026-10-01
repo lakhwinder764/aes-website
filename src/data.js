@@ -13,7 +13,7 @@ export const site = {
   mobileLabel: 'Mobile',
   smsHref: 'sms:0435266220',
   acknowledgment:
-    'Anand Education and Migration Services acknowledges that immigration assistance is provided by Princy Aghi, a registered migration agent (MARN 2619232). Information on this website is general in nature and does not replace advice about your own circumstances.',
+    'Anand Education and Migration Services acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.',
   email: 'info@anandmigrationservices.com',
   marn: 'MARN 2619232',
   australia: {

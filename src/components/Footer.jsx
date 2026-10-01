@@ -10,6 +10,7 @@ export default function Footer() {
         <div className="footer-brand">
           <img className="logo footer-logo" src="/assets/logo.png" alt={site.name} />
           <p className="footer-name hot-info">{site.name}</p>
+          <p className="ack-label">Acknowledgement</p>
           <p>{site.acknowledgment}</p>
           <div className="footer-social">
             <a href={site.social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={18} /></a>
@@ -81,9 +82,6 @@ export default function Footer() {
         </div>
       </div>
       <div className="container">
-        <p className="ack">
-          {site.name} acknowledges the traditional owners of the land upon which we live and work, and we pay our respects to the elders both past and present.
-        </p>
         <div className="legal">
           <span>Copyright © 2026 {site.name}. All rights reserved.</span>
           <span className="legal-phones">
